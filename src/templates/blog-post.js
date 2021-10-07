@@ -12,12 +12,13 @@ const Content = styled.div`
 
 const MarkedHeader = styled.h1`
   display: inline;
-  border-radius: 1em 0 1em 0;
+  border-radius: .5rem;
+  padding: 0 .5rem;
+  margin: 0 -.5rem;
   background-image: linear-gradient(
-    -100deg,
-    rgba(255, 250, 150, 0.15),
-    rgba(255, 250, 150, 0.8) 100%,
-    rgba(255, 250, 150, 0.25)
+    rgba(222, 233, 255, 0.1),
+    rgba(222, 233, 255, 0.4) 100%,
+    rgba(222, 233, 255, 0.05)
   );
 `
 
@@ -32,9 +33,10 @@ const MarkdownContent = styled.div`
     text-decoration: none;
     position: relative;
 
+    color: grey;
     background-image: linear-gradient(
-      rgba(255, 250, 150, 0.8),
-      rgba(255, 250, 150, 0.8)
+      rgba(222, 233, 255),
+      rgba(222, 233, 255)
     );
     background-repeat: no-repeat;
     background-size: 100% 0.2em;

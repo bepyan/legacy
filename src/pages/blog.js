@@ -12,20 +12,23 @@ const Content = styled.div`
   padding: 1.45rem 1.0875rem;
 `
 
-const ArticleDate = styled.h5`
-  display: inline;
-  color: #606060;
+const Title = styled.h1`
+  margin-bottom: 3.5rem;
 `
 
 const MarkerHeader = styled.h3`
   display: inline;
-  border-radius: 1em 0 1em 0;
-  background-image: linear-gradient(
-    -100deg,
-    rgba(255, 250, 150, 0.15),
-    rgba(255, 250, 150, 0.8) 100%,
-    rgba(255, 250, 150, 0.25)
-  );
+  border-radius: .5rem;
+  padding: 0 .5rem;
+  margin: 0 -.5rem;
+  &:hover{
+    text-decoration: underline;
+  }
+`
+
+const ArticleDate = styled.h5`
+  display: inline;
+  color: #606060;
 `
 
 const ReadingTime = styled.h5`
@@ -33,12 +36,18 @@ const ReadingTime = styled.h5`
   color: #606060;
 `
 
+const PreviewText = styled.p`
+  font-size: .9rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
+`
+
 const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Blog" />
       <Content>
-        <h1>Blog</h1>
+        <Title>Blog</Title>
         {data.allMarkdownRemark.edges
           .filter(({ node }) => {
             const rawDate = node.frontmatter.rawDate
@@ -60,7 +69,7 @@ const IndexPage = ({ data }) => {
                 <ArticleDate>{node.frontmatter.date}</ArticleDate>
                 <ReadingTime> - {node.fields.readingTime.text}</ReadingTime>
               </div>
-              <p>{node.excerpt}</p>
+              <PreviewText>{node.excerpt}</PreviewText>
             </div>
           ))}
       </Content>

@@ -22,7 +22,7 @@ const NavLink = styled(Link)`
     width: 100%;
     transform: scaleX(0);
     height: 2px;
-    bottom: 0;
+    bottom: -4px;
     left: 0;
     background-color: rgba(0, 0, 0, 0.8);
     transform-origin: bottom right;
@@ -48,7 +48,7 @@ const GitHubLink = styled.a`
     width: 100%;
     transform: scaleX(0);
     height: 2px;
-    bottom: 0;
+    bottom: -4px;
     left: 0;
     background-color: rgba(0, 0, 0, 0.8);
     transform-origin: bottom right;
@@ -78,7 +78,7 @@ const Header = ({ siteTitle }) => (
       <p>
         <HomeLink to="/">{siteTitle}</HomeLink>
         <NavLink to="/blog">Blog</NavLink>
-        <GitHubLink href="https://github.com/niklasmtj/gatsby-starter-julia">
+        <GitHubLink href="https://github.com/bepyan">
           GitHub
         </GitHubLink>
       </p>

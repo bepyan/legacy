@@ -602,6 +602,14 @@ pre tt:after {
   content: "";
 }
 
+br {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 h1::selection,
 h2::selection,
 h3::selection,
@@ -609,8 +617,17 @@ h4::selection,
 h5::selection,
 h6::selection,
 p::selection,
+strong::selection,
+span::selection,
 a::selection {
-  background: #fffa96cc;
+  background: #dee9ff;
+}
+li::selection {
+  background: #dee9ff90;
+}
+code::selection,
+code > span::selection {
+  background: #dee9ff30;
 }
 
 .gatsby-highlight {

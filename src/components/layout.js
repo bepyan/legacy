@@ -20,13 +20,16 @@ const Content = styled.div`
   padding-top: 0;
 `
 
-const GatsbyLink = styled.a`
-  margin-left: 5px;
-`
-
 const Footer = styled.footer`
+  margin: 0 1.0875rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  & > :not(:first-of-type) {
+    margin-left: 4px;
+  }
+  & > p {
+    font-size: 14px;
+  }
 `
 
 const Layout = ({ children }) => (
@@ -46,11 +49,8 @@ const Layout = ({ children }) => (
         <Content>
           <main>{children}</main>
           <Footer>
-            <p>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            </p>
-            <GatsbyLink href="https://www.gatsbyjs.org">Gatsby</GatsbyLink>
+            <p>©</p>
+            <p>bepyan</p>
           </Footer>
         </Content>
       </>

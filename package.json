@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-julia",
+  "name": "edword-kim-blog",
   "private": true,
-  "description": "A minimal blog template built with Gatsby",
+  "description": "A minimal blog template build with Gatsby",
   "version": "0.1.0",
   "author": "Niklas Metje <hi@niklasmtj.de>",
   "dependencies": {
@@ -41,6 +41,7 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "deploy": "gatsby build && gh-pages -d public",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "repository": {

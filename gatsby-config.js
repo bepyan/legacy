@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Edward Kim`,
     subtitle: `newbie developer`,
-    description: `A minimal coding blog starter built with Gatsbyjs.`,
+    description: `A minimal coding blog starter build with Gatsbyjs.`,
     author: `@bepyan`,
   },
   plugins: [

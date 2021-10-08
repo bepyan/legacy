@@ -1,14 +1,14 @@
 import React from "react"
 
-import LandingBio from "../components/landing-bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import LandingBio from "../components/LandingBio"
+import Layout from "../components/Layout"
+import SearchEngine from "../components/SearchEngine"
 
-const IndexPage = () => (
+const LandingPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SearchEngine title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <LandingBio />
   </Layout>
 )
 
-export default IndexPage
+export default LandingPage

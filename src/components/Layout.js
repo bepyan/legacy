@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 
-import Header from "./header"
+import Navigation from "./Navigation"
 import "./layout.css"
 
 const Content = styled.div`
@@ -45,7 +45,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Navigation siteTitle={data.site.siteMetadata.title} />
         <Content>
           <main>{children}</main>
           <Footer>

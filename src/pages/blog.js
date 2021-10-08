@@ -1,10 +1,10 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import { css } from "@emotion/core"
 import styled from "@emotion/styled"
+import { css } from "@emotion/react"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/Layout"
+import SearchEngine from "../components/SearchEngine"
 
 const Content = styled.div`
   margin: 0 auto;
@@ -42,10 +42,10 @@ const PreviewText = styled.p`
   opacity: 0.9;
 `
 
-const IndexPage = ({ data }) => {
+const BlogPage = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Blog" />
+      <SearchEngine title="Blog" />
       <Content>
         <Title>Blog</Title>
         {data.allMarkdownRemark.edges
@@ -77,7 +77,7 @@ const IndexPage = ({ data }) => {
   )
 }
 
-export default IndexPage
+export default BlogPage
 
 export const query = graphql`
   query {

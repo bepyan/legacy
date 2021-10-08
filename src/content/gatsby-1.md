@@ -2,7 +2,7 @@
 title: "Gatsby 블로그를 시작하기"
 date: "2021-10-07"
 draft: false
-path: "/blog/gatsby-1"
+path: "/blog/1"
 ---
 
 <br>

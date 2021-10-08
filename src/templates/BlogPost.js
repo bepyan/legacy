@@ -1,8 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 import styled from "@emotion/styled"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/Layout"
+import SearchEngine from "../components/SearchEngine"
 
 const Content = styled.div`
   margin: 0 auto;
@@ -52,11 +52,11 @@ const MarkdownContent = styled.div`
   }
 `
 
-export default ({ data }) => {
+const BlogPost = ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
-      <SEO
+      <SearchEngine
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
@@ -70,6 +70,8 @@ export default ({ data }) => {
     </Layout>
   )
 }
+export default BlogPost;
+
 
 export const pageQuery = graphql`
   query($path: String!) {

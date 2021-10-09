@@ -4,6 +4,7 @@ module.exports = {
     subtitle: `junior developer`,
     description: `A minimal coding blog starter build with Gatsbyjs.`,
     author: `@bepyan`,
+    siteUrl: `https://bepyan.github.io`
   },
   plugins: [
     {
@@ -14,6 +15,7 @@ module.exports = {
         anonymize: true,
       },
     },
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

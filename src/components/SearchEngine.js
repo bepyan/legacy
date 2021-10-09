@@ -37,7 +37,7 @@ function SearchEngine({ description, lang, meta, keywords, title }) {
       meta={[
         {
           name: "google-site-verification",
-          content: "IW87tE2IQja7BjGV4qw19t6Wk6Kcnmf"
+          content: "IW87tE2IQja7BjGV4qw19t6Wk6Kcnmf-x-K5lrYWa28"
         },
         {
           name: "naver-site-verification",

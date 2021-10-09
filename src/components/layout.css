@@ -626,7 +626,7 @@ li::selection {
   background: #dee9ff90;
 }
 code::selection,
-code > span::selection {
+code .token::selection {
   background: #dee9ff30;
 }
 

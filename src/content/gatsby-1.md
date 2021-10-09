@@ -56,62 +56,10 @@ npx gatsby new blog https://github.com/niklasmtj/gatsby-starter-julia
 
 ```
 cd blog
-gatsby develop
+yarn start
 ```
 
 `http://localhost:8000/`로 서버가 구동된다!
-
-<br>
-<br>
-
-### 🗡
-
-커스터마이징을 시작해보자.
-
-1. `gatsby-config.js`&nbsp 작성자의 정보사항을 수정해주자.
-2. `./images/gatsby-icon.png`&nbsp 웹 아이콘을 대체해주자.
-3. `./src/content`에서 markdown파일을 작성하면 즉시 글이 생긴다.
-4. 레이아웃이 아쉬운 부분을 조금 수정하자!
-
-   - `./src/pages/blog`에서 글 리스트를 수정할 수 있다.
-   - `./src/components/layout`&nbsp Header, Footer를 수정할 수 있다.
-   - `./src/components/landing-bio`&nbsp 프로필 화면을 수정할 수 있다.
-   - `./src/components/layout.css`&nbsp 전체 기본 스타일을 수정할 수 있다.
-
-    <br>
-
-   - 나중에 변경사항 궁금하면 commit을 확인하도록 하자.
-   - 드래그 설정한 부분
-
-     ```css
-     br {
-       -moz-user-select: none;
-       -khtml-user-select: none;
-       -webkit-user-select: none;
-       -ms-user-select: none;
-       user-select: none;
-     }
-
-     h1::selection,
-     h2::selection,
-     h3::selection,
-     h4::selection,
-     h5::selection,
-     h6::selection,
-     p::selection,
-     strong::selection,
-     span::selection,
-     a::selection {
-       background: #dee9ff;
-     }
-     li::selection {
-       background: #dee9ff90;
-     }
-     code::selection,
-     code > span::selection {
-       background: #dee9ff30;
-     }
-     ```
 
 <br>
 <br>

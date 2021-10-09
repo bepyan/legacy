@@ -36,6 +36,14 @@ function SearchEngine({ description, lang, meta, keywords, title }) {
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
+          name: "google-site-verification",
+          content: "IW87tE2IQja7BjGV4qw19t6Wk6Kcnmf"
+        },
+        {
+          name: "naver-site-verification",
+          content: "3763a796b024affc5b7513ac77c47e6e03c8bdcf"
+        },
+        {
           name: `description`,
           content: metaDescription,
         },

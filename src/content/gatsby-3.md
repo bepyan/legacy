@@ -5,8 +5,102 @@ draft: false
 path: "/blog/3"
 ---
 
+<br>
+<br>
+
+### 🗡 준비
+
+[**gatsby-plugin-sitemap**](<(https://www.gatsbyjs.com/plugins/gatsby-plugin-sitemap#example)>)
+
+- `sitemap.xml` &nbsp; 도메인 내의 *페이지 목록*을 명시한다.
+- Bot들이 쉽게 사이트를 수집할 수 있도록 도와준다. 보이지 않는 페이지도 문제없이 크롤링되도록.
+
+[**gatsby-plugin-robots-txt**](<(https://www.gatsbyjs.com/plugins/gatsby-plugin-robots-txt/)>)
+
+- `robots.txt` 생성해 준다.
+- 웹페이지를 수집할 수 있도록 허용하거나 제한한다. (관리자 페이지같이 보안이 필요한 부분을 제한)
+
+```shell
+yarn add gatsby-plugin-sitemap gatsby-plugin-robots-txt
+```
+
+```js
+module.exports = {
+  siteMetadata: {
+    //...
+    siteUrl: `https://bepyan.github.io`,
+  },
+  plugins: [
+    //...
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`,
+    //...
+  ],
+}
+```
+
+프로덕션 빌드하면 `/sitemap/sitemap-index.xml`, `/robots.txt` url로 접근이 가능하다.
+
+- 참고로 구글에서는 sitemap의 changefreq, priority 필드를 무시하고 lastmod 필드를 본다고 한다.
+
+<br>
+<br>
+
 ### 🗡 Google Search Console
 
-[구글 검색엔진](https://search.google.com/search-console/welcome?utm_source=about-page)에 등록할 수 있다.
+[Google Search Console](https://search.google.com/search-console/welcome?utm_source=about-page)에 등록할 수 있다.
 
-- DNS에 연동하지 않았기에 왼쪽의
+- 도메인(DNS)에 등록하지 않았기에 우측 URL 접두어에 작성하자
+
+![서치콘솔](https://user-images.githubusercontent.com/65283190/136661718-67b9ad83-5d3e-474e-a664-f384e2678d64.png)
+
+- HTML 태그를 통한 소유권을 확인
+  - meta정보를 `SearchEngine.js`, Helmet 컴포넌트 안에 작성하면 된다.
+  ```
+  <Helmet
+    //...
+    meta={[
+      {
+        name: "google-site-verification",
+        content: "복사한 콘텐트"
+      },
+      //...
+    ]}
+  />
+  ```
+- 소유권 확인이 되면 Sitemaps가서 `/sitemap/sitemap-index.xml` 입력
+  ![image](https://user-images.githubusercontent.com/65283190/136669156-c45c61d9-427e-4f11-9888-2c0b4e47e221.png)
+  - 만약 가져올 수 없다고하면 URL 검사 -> 색인 생성 요청하자.
+- robots.txt 는 Google이 알아서 잘 크롤링 할 것이다.
+- 실제 사이트가 등록되기까지 시간이 걸리므로 몇일 후 시도해보도록 하자.
+
+<br>
+<br>
+
+### 🗡 Naver Search Advisor
+
+[네이버 웹마스터](https://searchadvisor.naver.com/console/board)
+
+- 구글과 똑같이 진행하면된다. meta에 정보 입력하고 배포한 후 소유확인.
+- 웹마스터 도구 -> 사이트관리 -> 사이트 선택 -> 요청 -> 사이트맵 입력
+
+![네이버 사이트맵](https://user-images.githubusercontent.com/65283190/136664386-1d7cd06b-546e-4b50-ac8c-f1b542340bb3.png)
+
+- 검증 -> robots.txt -> 수집 요청
+
+![robots 수집 요청](https://user-images.githubusercontent.com/65283190/136668861-6df8896d-4513-4ddb-b305-a329378a4908.png)
+
+- 설정 -> 수집 주기 설정 -> 빠르게
+
+![image](https://user-images.githubusercontent.com/65283190/136669274-9628f458-fe87-4295-bff1-15ec3b6904b8.png)
+
+- 네이버도 마찬가지로 실제 사이트 등록되기까지 시간이 걸린다.
+
+<br>
+<br>
+
+### 🗡 Daum 검색 등록
+
+[Daum 검색 등록](https://register.search.daum.net/index.daum)
+
+- 어려운 절차 없이 바로 등록 신청이 가능하다.

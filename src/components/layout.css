@@ -624,6 +624,7 @@ p::selection,
 strong::selection,
 span::selection,
 em::selection,
+img::selection,
 a::selection {
   background: #dee9ff;
 }

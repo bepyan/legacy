@@ -65,7 +65,7 @@ path: "/blog/2"
    - `Layout.js`&nbsp; 페이지에 대한 레이아웃을 명시한다. Header, Footer를 수정할 수 있다.
    - `LandingBio.js`&nbsp; 프로필 화면을 수정할 수 있다.
    - `Navigation.js`&nbsp; 블로그 헤더에 대한 컴포넌트이다.
-   - `SearchEngine.js`&nbsp; [Helmet](./3)을 사용해서 크롤러에게 컨탠츠에 대한 정보를 명시할 수 있다.
+   - `SearchEngine.js`&nbsp; SEO 역할. [Helmet](./3)을 사용해서 크롤러에게 컨탠츠에 대한 정보를 명시할 수 있다.
 
 <br>
 <br>
@@ -75,6 +75,7 @@ path: "/blog/2"
 글 드래그에 대한 스타일 설정
 
 ```css
+
 br {
   -moz-user-select: none;
   -khtml-user-select: none;
@@ -92,6 +93,8 @@ h6::selection,
 p::selection,
 strong::selection,
 span::selection,
+em::selection,
+img::selection,
 a::selection {
   background: #dee9ff;
 }
@@ -99,8 +102,18 @@ li::selection {
   background: #dee9ff90;
 }
 code::selection,
-code > span::selection {
+code .token::selection {
   background: #dee9ff30;
+}
+
+```
+
+<br>
+
+italic 글씨체가 너무 붙어 있음으로 
+```css
+em {
+  margin: 0px 3px
 }
 ```
 

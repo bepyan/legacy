@@ -610,6 +610,10 @@ br {
   user-select: none;
 }
 
+em {
+  margin: 0px 3px
+}
+
 h1::selection,
 h2::selection,
 h3::selection,
@@ -619,6 +623,7 @@ h6::selection,
 p::selection,
 strong::selection,
 span::selection,
+em::selection,
 a::selection {
   background: #dee9ff;
 }

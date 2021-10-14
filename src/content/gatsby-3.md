@@ -75,6 +75,11 @@ module.exports = {
 - 실제 사이트가 등록되기까지 시간이 걸리므로 몇일 후 시도해보도록 하자.
 
 <br>
+
+- 3일 후 sitemap이 색인되었다!
+  ![image](https://user-images.githubusercontent.com/65283190/137378661-bd6f04d7-2a8a-4c29-9135-2cd3e47cfc1a.png)
+
+<br>
 <br>
 
 ### 🗡 Naver Search Advisor

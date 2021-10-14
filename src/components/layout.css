@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 code {
   background-color: hsla(0, 0%, 0%, 0.04);
 }
@@ -602,6 +606,7 @@ pre tt:after {
   content: "";
 }
 
+anchor,
 br {
   -moz-user-select: none;
   -khtml-user-select: none;
@@ -611,7 +616,7 @@ br {
 }
 
 em {
-  margin: 0px 3px
+  margin: 0px 3px;
 }
 
 h1::selection,

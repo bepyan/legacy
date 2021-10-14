@@ -50,6 +50,11 @@ const MarkdownContent = styled.div`
   a > code:hover {
     text-decoration: underline;
   }
+
+  .anchor-header {
+    left: 4px;
+    background-image: none;
+  }
 `
 
 const BlogPost = ({ data }) => {
@@ -77,9 +82,10 @@ export const pageQuery = graphql`
   query($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
+      tableOfContents
       excerpt(pruneLength: 160)
       frontmatter {
-        date(formatString: "DD MMMM, YYYY")
+        date(formatString: "YYYY-MM-DD")
         path
         title
       }

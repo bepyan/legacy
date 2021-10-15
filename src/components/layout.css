@@ -630,6 +630,7 @@ strong::selection,
 span::selection,
 em::selection,
 img::selection,
+summary::selection,
 a::selection {
   background: #dee9ff;
 }
@@ -639,6 +640,21 @@ li::selection {
 code::selection,
 code .token::selection {
   background: #dee9ff30;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+summary > * {
+  display: inline;
+}
+details > summary::before {
+  content: "+";
+  font-family: monospace;
+}
+details[open] > summary::before {
+  content: "-";
 }
 
 .gatsby-highlight {

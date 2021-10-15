@@ -3,6 +3,28 @@ import styled from "@emotion/styled";
 import PropTypes from "prop-types";
 import React from "react";
 
+const Navigation = ({ siteTitle }) => (
+  <SiteHeader>
+    <Content>
+      <p>
+        <HomeLink to="/">{siteTitle}</HomeLink>
+        <NavLink to="/blog">Blog</NavLink>
+        <GitHubLink href="https://github.com/bepyan">GitHub</GitHubLink>
+      </p>
+    </Content>
+  </SiteHeader>
+);
+
+Navigation.propTypes = {
+  siteTitle: PropTypes.string,
+};
+
+Navigation.defaultProps = {
+  siteTitle: ``,
+};
+
+export default Navigation;
+
 const Content = styled.div`
   max-width: 860px;
   padding: 1rem 1.0875rem;
@@ -71,25 +93,3 @@ const SiteHeader = styled.header`
   align-content: center;
   justify-content: center;
 `;
-
-const Navigation = ({ siteTitle }) => (
-  <SiteHeader>
-    <Content>
-      <p>
-        <HomeLink to="/">{siteTitle}</HomeLink>
-        <NavLink to="/blog">Blog</NavLink>
-        <GitHubLink href="https://github.com/bepyan">GitHub</GitHubLink>
-      </p>
-    </Content>
-  </SiteHeader>
-);
-
-Navigation.propTypes = {
-  siteTitle: PropTypes.string,
-};
-
-Navigation.defaultProps = {
-  siteTitle: ``,
-};
-
-export default Navigation;

@@ -13,25 +13,6 @@ import styled from "@emotion/styled";
 import Navigation from "./Navigation";
 import "./layout.css";
 
-const Content = styled.div`
-  margin: 0 auto;
-  max-width: 860px;
-  padding: 0 1.0875rem 1rem;
-  padding-top: 0;
-`;
-
-const Footer = styled.footer`
-  margin: 0 1.0875rem;
-  display: flex;
-  justify-content: flex-end;
-  & > :not(:first-of-type) {
-    margin-left: 4px;
-  }
-  & > p {
-    font-size: 14px;
-  }
-`;
-
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -63,3 +44,22 @@ Layout.propTypes = {
 };
 
 export default Layout;
+
+const Content = styled.div`
+  margin: 0 auto;
+  max-width: 860px;
+  padding: 0 1.0875rem 1rem;
+  padding-top: 0;
+`;
+
+const Footer = styled.footer`
+  margin: 0 1.0875rem;
+  display: flex;
+  justify-content: flex-end;
+  & > :not(:first-of-type) {
+    margin-left: 4px;
+  }
+  & > p {
+    font-size: 14px;
+  }
+`;

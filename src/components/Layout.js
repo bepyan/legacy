@@ -5,20 +5,20 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
-import styled from "@emotion/styled"
+import React from "react";
+import PropTypes from "prop-types";
+import { StaticQuery, graphql } from "gatsby";
+import styled from "@emotion/styled";
 
-import Navigation from "./Navigation"
-import "./layout.css"
+import Navigation from "./Navigation";
+import "./layout.css";
 
 const Content = styled.div`
   margin: 0 auto;
   max-width: 860px;
   padding: 0 1.0875rem 1rem;
   padding-top: 0;
-`
+`;
 
 const Footer = styled.footer`
   margin: 0 1.0875rem;
@@ -30,7 +30,7 @@ const Footer = styled.footer`
   & > p {
     font-size: 14px;
   }
-`
+`;
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -43,7 +43,7 @@ const Layout = ({ children }) => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <>
         <Navigation siteTitle={data.site.siteMetadata.title} />
         <Content>
@@ -56,10 +56,10 @@ const Layout = ({ children }) => (
       </>
     )}
   />
-)
+);
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;

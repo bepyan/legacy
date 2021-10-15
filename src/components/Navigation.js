@@ -1,13 +1,13 @@
-import { Link } from "gatsby"
-import styled from "@emotion/styled"
-import PropTypes from "prop-types"
-import React from "react"
+import { Link } from "gatsby";
+import styled from "@emotion/styled";
+import PropTypes from "prop-types";
+import React from "react";
 
 const Content = styled.div`
   max-width: 860px;
   padding: 1rem 1.0875rem;
   font-size: 1.2rem;
-`
+`;
 
 const NavLink = styled(Link)`
   color: black;
@@ -33,7 +33,7 @@ const NavLink = styled(Link)`
     transform: scaleX(1);
     transform-origin: bottom left;
   }
-`
+`;
 
 const GitHubLink = styled.a`
   color: black;
@@ -59,18 +59,18 @@ const GitHubLink = styled.a`
     transform: scaleX(1);
     transform-origin: bottom left;
   }
-`
+`;
 
 const HomeLink = styled(NavLink)`
   margin-left: 0;
-`
+`;
 
 const SiteHeader = styled.header`
   background: transparent;
   display: flex;
   align-content: center;
   justify-content: center;
-`
+`;
 
 const Navigation = ({ siteTitle }) => (
   <SiteHeader>
@@ -78,20 +78,18 @@ const Navigation = ({ siteTitle }) => (
       <p>
         <HomeLink to="/">{siteTitle}</HomeLink>
         <NavLink to="/blog">Blog</NavLink>
-        <GitHubLink href="https://github.com/bepyan">
-          GitHub
-        </GitHubLink>
+        <GitHubLink href="https://github.com/bepyan">GitHub</GitHubLink>
       </p>
     </Content>
   </SiteHeader>
-)
+);
 
 Navigation.propTypes = {
   siteTitle: PropTypes.string,
-}
+};
 
 Navigation.defaultProps = {
   siteTitle: ``,
-}
+};
 
-export default Navigation
+export default Navigation;

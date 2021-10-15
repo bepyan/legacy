@@ -4,7 +4,7 @@ module.exports = {
     subtitle: `junior developer`,
     description: `A minimal coding blog starter build with Gatsbyjs.`,
     author: `@bepyan`,
-    siteUrl: `https://bepyan.github.io`
+    siteUrl: `https://bepyan.github.io`,
   },
   plugins: [
     {
@@ -38,8 +38,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-anchor-links",
       options: {
-        offset: -100
-      }
+        offset: -100,
+      },
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -55,15 +55,16 @@ module.exports = {
               maintainCase: false,
               removeAccents: true,
               elements: [`h1`, `h2`, `h3`],
-            }
+            },
           },
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
               aliases: { sh: "bash", js: "javascript" },
               showLineNumbers: true,
-            }
-          }],
+            },
+          },
+        ],
       },
     },
     {
@@ -79,4 +80,4 @@ module.exports = {
       },
     },
   ],
-}
+};

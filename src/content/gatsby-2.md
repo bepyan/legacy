@@ -75,7 +75,6 @@ path: "/blog/2"
 글 드래그에 대한 스타일 설정
 
 ```css
-
 br {
   -moz-user-select: none;
   -khtml-user-select: none;
@@ -105,15 +104,15 @@ code::selection,
 code .token::selection {
   background: #dee9ff30;
 }
-
 ```
 
 <br>
 
-italic 글씨체가 너무 붙어 있음으로 
+italic 글씨체가 너무 붙어 있음으로
+
 ```css
 em {
-  margin: 0px 3px
+  margin: 0px 3px;
 }
 ```
 

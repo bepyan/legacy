@@ -5,10 +5,10 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import React from "react";
+import PropTypes from "prop-types";
+import { Helmet } from "react-helmet";
+import { useStaticQuery, graphql } from "gatsby";
 
 function SearchEngine({ description, lang, meta, keywords, title }) {
   const { site } = useStaticQuery(
@@ -23,9 +23,9 @@ function SearchEngine({ description, lang, meta, keywords, title }) {
         }
       }
     `
-  )
+  );
 
-  const metaDescription = description || site.siteMetadata.description
+  const metaDescription = description || site.siteMetadata.description;
 
   return (
     <Helmet
@@ -37,11 +37,11 @@ function SearchEngine({ description, lang, meta, keywords, title }) {
       meta={[
         {
           name: "google-site-verification",
-          content: "IW87tE2IQja7BjGV4qw19t6Wk6Kcnmf-x-K5lrYWa28"
+          content: "IW87tE2IQja7BjGV4qw19t6Wk6Kcnmf-x-K5lrYWa28",
         },
         {
           name: "naver-site-verification",
-          content: "3763a796b024affc5b7513ac77c47e6e03c8bdcf"
+          content: "3763a796b024affc5b7513ac77c47e6e03c8bdcf",
         },
         {
           name: `description`,
@@ -79,21 +79,21 @@ function SearchEngine({ description, lang, meta, keywords, title }) {
         .concat(
           keywords.length > 0
             ? {
-              name: `keywords`,
-              content: keywords.join(`, `),
-            }
+                name: `keywords`,
+                content: keywords.join(`, `),
+              }
             : []
         )
         .concat(meta)}
     />
-  )
+  );
 }
 
 SearchEngine.defaultProps = {
   lang: `ko`,
   meta: [],
   keywords: [],
-}
+};
 
 SearchEngine.propTypes = {
   description: PropTypes.string,
@@ -101,6 +101,6 @@ SearchEngine.propTypes = {
   meta: PropTypes.array,
   keywords: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired,
-}
+};
 
-export default SearchEngine
+export default SearchEngine;

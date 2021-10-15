@@ -36,7 +36,7 @@ module.exports = {
     `gatsby-plugin-robots-txt`,
     //...
   ],
-}
+};
 ```
 
 프로덕션 빌드하면 `/sitemap/sitemap-index.xml`, `/robots.txt` url로 접근이 가능하다.

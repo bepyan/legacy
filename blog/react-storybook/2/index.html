@@ -1,0 +1,389 @@
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.3e7f9910a175e92f2c38.css" data-identity="gatsby-global-css">code[class*=language-],pre[class*=language-]{color:#c5c8c6;direction:ltr;font-family:Inconsolata,Monaco,Consolas,Courier New,Courier,monospace;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;text-align:left;text-shadow:0 1px rgba(0,0,0,.3);white-space:pre;word-break:normal;word-spacing:normal}pre[class*=language-]{border-radius:.3em;margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#1d1f21}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#7c7c7c}.token.punctuation{color:#c5c8c6}.namespace{opacity:.7}.token.keyword,.token.property,.token.tag{color:#96cbfe}.token.class-name{color:#ffffb6;text-decoration:underline}.token.boolean,.token.constant{color:#9c9}.token.deleted,.token.symbol{color:#f92672}.token.number{color:#ff73fd}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#a8ff60}.token.variable{color:#c6c5fe}.token.operator{color:#ededed}.token.entity{color:#ffffb6;cursor:help}.token.url{color:#96cbfe}.language-css .token.string,.style .token.string{color:#87c38a}.token.atrule,.token.attr-value{color:#f9ee98}.token.function{color:#dad085}.token.regex{color:#e9c062}.token.important{color:#fd971f}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}pre[class*=language-].line-numbers{counter-reset:linenumber;padding-left:3.8em;position:relative}pre[class*=language-].line-numbers>code{position:relative;white-space:inherit}.line-numbers .line-numbers-rows{border-right:1px solid #999;font-size:100%;left:-3.8em;letter-spacing:-1px;pointer-events:none;position:absolute;top:0;-webkit-user-select:none;-ms-user-select:none;user-select:none;width:3em}.line-numbers-rows>span{counter-increment:linenumber;display:block}.line-numbers-rows>span:before{color:#999;content:counter(linenumber);display:block;padding-right:.8em;text-align:right}@font-face{font-display:swap;font-family:Nunito;font-style:normal;font-weight:200;src:local("Nunito Extra Light "),local("Nunito-Extra Light"),url(/static/nunito-latin-200-9c225f46c4b37be88e1ec1bd7f951974.woff2) format("woff2"),url(/static/nunito-latin-200-6f8b98c692bbdfb3c11adf70835c1fbd.woff) format("woff")}@font-face{font-display:swap;font-family:Nunito;font-style:italic;font-weight:200;src:local("Nunito Extra Light italic"),local("Nunito-Extra Lightitalic"),url(/static/nunito-latin-200italic-f676cc0fc1961dfe535fee40bd8a278f.woff2) format("woff2"),url(/static/nunito-latin-200italic-d95e62d15b659c1faf86bc8bb07af37c.woff) format("woff")}@font-face{font-display:swap;font-family:Nunito;font-style:normal;font-weight:300;src:local("Nunito Light "),local("Nunito-Light"),url(/static/nunito-latin-300-b959e8d004563d8cd96dec306d73f91d.woff2) format("woff2"),url(/static/nunito-latin-300-3c037be66baa5e1d6617e2d83b246828.woff) format("woff")}@font-face{font-display:swap;font-family:Nunito;font-style:italic;font-weight:300;src:local("Nunito Light italic"),local("Nunito-Lightitalic"),url(/static/nunito-latin-300italic-22754f73f619e917723a99c1a84f277a.woff2) format("woff2"),url(/static/nunito-latin-300italic-120c351a2ef0bd18dc8a87d0046d648b.woff) format("woff")}@font-face{font-display:swap;font-family:Nunito;font-style:normal;font-weight:400;src:local("Nunito Regular "),local("Nunito-Regular"),url(/static/nunito-latin-400-aeb21b79a21841c44124bf8595764022.woff2) format("woff2"),url(/static/nunito-latin-400-e8aadc1b678fa56c9d09b8ea7ecb9f74.woff) format("woff")}@font-face{font-display:swap;font-family:Nunito;font-style:italic;font-weight:400;src:local("Nunito Regular italic"),local("Nunito-Regularitalic"),url(/static/nunito-latin-400italic-6eec535c10b0a90374671a497daca87c.woff2) format("woff2"),url(/static/nunito-latin-400italic-e7edf90e10765451acb6022211df0675.woff) format("woff")}@font-face{font-display:swap;font-family:Nunito;font-style:normal;font-weight:600;src:local("Nunito SemiBold "),local("Nunito-SemiBold"),url(/static/nunito-latin-600-84985ea9e2befff565748ded244d111e.woff2) format("woff2"),url(/static/nunito-latin-600-51aac6462452f9d89a71db9d49c3c8f5.woff) format("woff")}@font-face{font-display:swap;font-family:Nunito;font-style:italic;font-weight:600;src:local("Nunito SemiBold italic"),local("Nunito-SemiBolditalic"),url(/static/nunito-latin-600italic-492585a577ef5f8f0d69966bbb93e0c9.woff2) format("woff2"),url(/static/nunito-latin-600italic-90367a7e9657410d4b41ab5e9eb4d308.woff) format("woff")}@font-face{font-display:swap;font-family:Nunito;font-style:normal;font-weight:700;src:local("Nunito Bold "),local("Nunito-Bold"),url(/static/nunito-latin-700-df0b57e17a0940db5c525000bdd83ecf.woff2) format("woff2"),url(/static/nunito-latin-700-0ac78fedca8a4de6cedabd8762805817.woff) format("woff")}@font-face{font-display:swap;font-family:Nunito;font-style:italic;font-weight:700;src:local("Nunito Bold italic"),local("Nunito-Bolditalic"),url(/static/nunito-latin-700italic-0f07fb53b1ef8e6ff0f37ea657aa179d.woff2) format("woff2"),url(/static/nunito-latin-700italic-9f973b986df693b6804f392679b1748d.woff) format("woff")}@font-face{font-display:swap;font-family:Nunito;font-style:normal;font-weight:800;src:local("Nunito ExtraBold "),local("Nunito-ExtraBold"),url(/static/nunito-latin-800-500aa9f559d7be3a129d8484d9ce799b.woff2) format("woff2"),url(/static/nunito-latin-800-c7c17be068562f90752e938b5bcfeafb.woff) format("woff")}@font-face{font-display:swap;font-family:Nunito;font-style:italic;font-weight:800;src:local("Nunito ExtraBold italic"),local("Nunito-ExtraBolditalic"),url(/static/nunito-latin-800italic-7b698a6e7e155bf1ea223df2d3305362.woff2) format("woff2"),url(/static/nunito-latin-800italic-2b4ec9abf7de5a8d8e7ab5a0422c9c6c.woff) format("woff")}@font-face{font-display:swap;font-family:Nunito;font-style:normal;font-weight:900;src:local("Nunito Black "),local("Nunito-Black"),url(/static/nunito-latin-900-1baf75ebec1b2afdd6cf1e238a227fbb.woff2) format("woff2"),url(/static/nunito-latin-900-44df4f474f6fcd8dc05e1831ce423b7b.woff) format("woff")}@font-face{font-display:swap;font-family:Nunito;font-style:italic;font-weight:900;src:local("Nunito Black italic"),local("Nunito-Blackitalic"),url(/static/nunito-latin-900italic-e3c092a3e2314146e496821b2f051abb.woff2) format("woff2"),url(/static/nunito-latin-900italic-02a2b409ce7bbc6e9ba9844314a5e9b7.woff) format("woff")}html{scroll-behavior:smooth}code{background-color:rgba(0,0,0,.04)}body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:Nunito,Avenir,Helvetica,"sans-serif";margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{-webkit-text-decoration-skip:objects;color:rgba(0,0,0,.8);font-style:normal}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{box-sizing:border-box;font:112.5%/1.45em georgia,serif;overflow-y:scroll}*,:after,:before{box-sizing:inherit}body{word-wrap:break-word;-ms-font-feature-settings:"kern","liga","clig","calt";font-feature-settings:"kern","liga","clig","calt";color:rgba(0,0,0,.8);font-kerning:normal;font-weight:400}img{margin:0 0 1.45rem;max-width:100%;padding:0}h1{font-size:2.25rem}h1,h2{text-rendering:optimizeLegibility;color:inherit;font-weight:700;line-height:1.1;margin:0 0 1.45rem;padding:0}h2{font-size:1.62671rem}h3{font-size:1.38316rem}h3,h4{text-rendering:optimizeLegibility;color:inherit;font-weight:700;line-height:1.1;margin:0 0 1.45rem;padding:0}h4{font-size:1rem}h5{font-size:.85028rem}h5,h6{text-rendering:optimizeLegibility;color:inherit;font-weight:700;line-height:1.1;margin:0 0 1.45rem;padding:0}h6{font-size:.78405rem}hgroup{margin:0 0 1.45rem;padding:0}ol,ul{list-style-image:none;list-style-position:outside;margin:0 0 1.45rem 1.45rem;padding:0}dd,dl,figure,p{margin:0 0 1.45rem;padding:0}pre{word-wrap:normal;background:rgba(0,0,0,.04);border-radius:3px;font-size:.8rem;line-height:1.42;margin:0 0 1.45rem;overflow:auto;padding:1.45rem}table{border-collapse:collapse;font-size:1rem;line-height:1.45rem;width:100%}fieldset,table{margin:0 0 1.45rem;padding:0}blockquote{margin:0 1.45rem 1.45rem;padding:0}form,iframe,noscript{margin:0 0 1.45rem;padding:0}hr{background:rgba(0,0,0,.2);border:none;height:1px;margin:0 0 calc(1.45rem - 1px);padding:0}address{margin:0 0 1.45rem;padding:0}b,dt,strong,th{font-weight:700}li{margin-bottom:.725rem}ol li,ul li{padding-left:0}li>ol,li>ul{margin-bottom:.725rem;margin-left:1.45rem;margin-top:.725rem}blockquote :last-child,li :last-child,p :last-child{margin-bottom:0}li>p{margin-bottom:.725rem}code,kbd,samp{font-size:.8rem;line-height:1.45rem}abbr,abbr[title],acronym{border-bottom:1px dotted rgba(0,0,0,.5);cursor:help}abbr[title]{text-decoration:none}td,th,thead{text-align:left}td,th{font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";border-bottom:1px solid rgba(0,0,0,.12);padding:.725rem .96667rem calc(.725rem - 1px)}td:first-child,th:first-child{padding-left:0}td:last-child,th:last-child{padding-right:0}code,tt{background-color:rgba(0,0,0,.04);border-radius:3px;font-family:SFMono-Regular,Consolas,Roboto Mono,Droid Sans Mono,Liberation Mono,Menlo,Courier,monospace;padding:0}pre code{background:none;line-height:1.42}code:after,code:before,tt:after,tt:before{content:" ";letter-spacing:-.2em}pre code:after,pre code:before,pre tt:after,pre tt:before{content:""}anchor,br{-webkit-user-select:none;-ms-user-select:none;user-select:none}em{margin:0 3px}a::selection,em::selection,h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,h6::selection,img::selection,p::selection,span::selection,strong::selection,summary::selection{background:#dee9ff}li::selection{background:#dee9ff90}code .token::selection,code::selection{background:#dee9ff30}summary{cursor:pointer;font-weight:600}summary>*{display:inline}details>summary:before{content:"+";font-family:monospace}details[open]>summary:before{content:"-"}.gatsby-highlight{background-color:#1d1f21;border-radius:.3em;margin:.5em 0;overflow:auto;padding:1em}.gatsby-highlight pre[class*=language-].line-numbers{overflow:initial;padding:0 0 0 2.8em}@media only screen and (max-width:480px){html{font-size:100%}}</style><meta name="generator" content="Gatsby 3.14.2"/><link rel="sitemap" type="application/xml" href="/sitemap/sitemap-index.xml"/><title data-react-helmet="true">( React Storybook ) CheckBox 만들기 | Edward Kim</title><meta data-react-helmet="true" name="google-site-verification" content="IW87tE2IQja7BjGV4qw19t6Wk6Kcnmf-x-K5lrYWa28"/><meta data-react-helmet="true" name="naver-site-verification" content="3763a796b024affc5b7513ac77c47e6e03c8bdcf"/><meta data-react-helmet="true" name="description" content="landing image 기본 요소 CheckBox. 하지만 생각보다 커스텀하기 어렵다. React + Emotion으로 만들어 보자. ( 핵심 ) 못생긴 기존 input을 숨기고 이쁜 박스를 따로 배치하기. box는 style로 체크마크는 svg를 사용한다. custom hook…"/><meta data-react-helmet="true" property="og:title" content="( React Storybook ) CheckBox 만들기"/><meta data-react-helmet="true" property="og:description" content="landing image 기본 요소 CheckBox. 하지만 생각보다 커스텀하기 어렵다. React + Emotion으로 만들어 보자. ( 핵심 ) 못생긴 기존 input을 숨기고 이쁜 박스를 따로 배치하기. box는 style로 체크마크는 svg를 사용한다. custom hook…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="@bepyan"/><meta data-react-helmet="true" name="twitter:title" content="( React Storybook ) CheckBox 만들기"/><meta data-react-helmet="true" name="twitter:description" content="landing image 기본 요소 CheckBox. 하지만 생각보다 커스텀하기 어렵다. React + Emotion으로 만들어 보자. ( 핵심 ) 못생긴 기존 input을 숨기고 이쁜 박스를 따로 배치하기. box는 style로 체크마크는 svg를 사용한다. custom hook…"/><style type="text/css">
+    .anchor-header.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .anchor-header.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .anchor-header svg,
+    h2 .anchor-header svg,
+    h3 .anchor-header svg,
+    h4 .anchor-header svg,
+    h5 .anchor-header svg,
+    h6 .anchor-header svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor-header svg,
+    h2:hover .anchor-header svg,
+    h3:hover .anchor-header svg,
+    h4:hover .anchor-header svg,
+    h5:hover .anchor-header svg,
+    h6:hover .anchor-header svg,
+    h1 .anchor-header:focus svg,
+    h2 .anchor-header:focus svg,
+    h3 .anchor-header:focus svg,
+    h4 .anchor-header:focus svg,
+    h5 .anchor-header:focus svg,
+    h6 .anchor-header:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><link rel="icon" href="/favicon-32x32.png?v=230ecbf6441ae0cc6b010f0858ea55fe" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#1D1F21"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=230ecbf6441ae0cc6b010f0858ea55fe"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=230ecbf6441ae0cc6b010f0858ea55fe"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=230ecbf6441ae0cc6b010f0858ea55fe"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=230ecbf6441ae0cc6b010f0858ea55fe"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=230ecbf6441ae0cc6b010f0858ea55fe"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=230ecbf6441ae0cc6b010f0858ea55fe"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=230ecbf6441ae0cc6b010f0858ea55fe"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=230ecbf6441ae0cc6b010f0858ea55fe"/><link as="script" rel="preload" href="/webpack-runtime-1d4c1d11dcb3ee08c681.js"/><link as="script" rel="preload" href="/framework-30aab022bb8682845c56.js"/><link as="script" rel="preload" href="/app-4797a0e7c9c6a0c046ed.js"/><link as="script" rel="preload" href="/commons-bc1d510cf883c908f875.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-e46d7168bdeed87f4158.js"/><link as="fetch" rel="preload" href="/page-data/blog/react-storybook/2/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3139552914.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3649515864.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/63159454.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><style data-emotion="css rnvdow">.css-rnvdow{background:transparent;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;}</style><header class="css-rnvdow edyo43n0"><style data-emotion="css js4wiy">.css-js4wiy{max-width:860px;padding:1rem 1.0875rem;font-size:1.2rem;}</style><div class="css-js4wiy edyo43n4"><p><style data-emotion="css cw1br7">.css-cw1br7{color:black;margin-left:15px;-webkit-text-decoration:none;text-decoration:none;display:inline-block;position:relative;margin-left:0;}.css-cw1br7::after{content:"";position:absolute;width:100%;-webkit-transform:scaleX(0);-moz-transform:scaleX(0);-ms-transform:scaleX(0);transform:scaleX(0);height:2px;bottom:-4px;left:0;background-color:rgba(0, 0, 0, 0.8);transform-origin:bottom right;-webkit-transition:-webkit-transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);transition:transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);}.css-cw1br7:hover::after{-webkit-transform:scaleX(1);-moz-transform:scaleX(1);-ms-transform:scaleX(1);transform:scaleX(1);transform-origin:bottom left;}</style><a class="css-cw1br7 edyo43n1" href="/">Edward Kim</a><style data-emotion="css rom66b">.css-rom66b{color:black;margin-left:15px;-webkit-text-decoration:none;text-decoration:none;display:inline-block;position:relative;}.css-rom66b::after{content:"";position:absolute;width:100%;-webkit-transform:scaleX(0);-moz-transform:scaleX(0);-ms-transform:scaleX(0);transform:scaleX(0);height:2px;bottom:-4px;left:0;background-color:rgba(0, 0, 0, 0.8);transform-origin:bottom right;-webkit-transition:-webkit-transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);transition:transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);}.css-rom66b:hover::after{-webkit-transform:scaleX(1);-moz-transform:scaleX(1);-ms-transform:scaleX(1);transform:scaleX(1);transform-origin:bottom left;}</style><a class="css-rom66b edyo43n3" href="/blog">Blog</a><a href="https://github.com/bepyan" class="css-rom66b edyo43n2">GitHub</a></p></div></header><style data-emotion="css 1maa4id">.css-1maa4id{margin:0 auto;max-width:860px;padding:0 1.0875rem 1rem;padding-top:0;}</style><div class="css-1maa4id e1g6m4zg1"><main><style data-emotion="css thxjb7">.css-thxjb7{margin:0 auto;max-width:860px;padding:1.45rem 1.0875rem;}</style><div class="css-thxjb7 e19fa7db3"><style data-emotion="css 1u4hpl4">.css-1u4hpl4{display:inline;}</style><h1 class="css-1u4hpl4 e19fa7db2">( React Storybook ) CheckBox 만들기</h1><style data-emotion="css 14yqsu0">.css-14yqsu0{margin-top:10px;color:#606060;}</style><h3 class="css-14yqsu0 e19fa7db1">2021 Oct 17<!-- --> · <!-- -->6 min read</h3><style data-emotion="css 1arf9aw">.css-1arf9aw a{-webkit-text-decoration:none;text-decoration:none;position:relative;color:grey;background-image:linear-gradient(rgba(222, 233, 255), rgba(222, 233, 255));background-repeat:no-repeat;-webkit-background-size:100% 0.2em;background-size:100% 0.2em;-webkit-background-position:0 88%;background-position:0 88%;-webkit-transition:background-size 0.25s ease-in;transition:background-size 0.25s ease-in;}.css-1arf9aw a:hover{-webkit-background-size:100% 88%;background-size:100% 88%;}.css-1arf9aw a>code:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1arf9aw .anchor-header{left:4px;background-image:none;}</style><div class="css-1arf9aw e19fa7db0"><p><img src="https://user-images.githubusercontent.com/65283190/137625859-a4795643-a94c-44eb-97c9-d93f5b518728.gif" alt="landing image"></p>
+<br>
+<br>
+<p>기본 요소 CheckBox. 하지만 생각보다 커스텀하기 어렵다. React + Emotion으로 만들어 보자.</p>
+<p><strong>( 핵심 )</strong></p>
+<ul>
+<li>못생긴 기존 input을 숨기고 이쁜 박스를 따로 배치하기.</li>
+<li>box는 style로 체크마크는 svg를 사용한다.</li>
+<li>custom hook으로 완전 편하게 만들자.</li>
+</ul>
+<br>
+<br>
+<h3 id="-checkbox-뼈대" style="position:relative;">🗡 CheckBox 뼈대<a href="#-checkbox-%EB%BC%88%EB%8C%80" aria-label=" checkbox 뼈대 permalink" class="anchor-header after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h3>
+<p>만들 checkbox의 뼈대이다.</p>
+<div class="gatsby-highlight" data-language="ts"><pre style="counter-reset: linenumber NaN" class="language-ts line-numbers"><code class="language-ts"><span class="token keyword">interface</span> <span class="token class-name">CheckBoxProps</span> <span class="token punctuation">{</span>
+  id<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span>           <span class="token comment">// form 에서 읽는 용도</span>
+  label<span class="token operator">:</span> <span class="token builtin">string</span>         <span class="token comment">// UI에 랜더링될 텍스트</span>
+  checked<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">boolean</span>     <span class="token comment">// 체크 여부</span>
+  defaultChecked<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">boolean</span> <span class="token comment">// 기본 체크 여부</span>
+  disabled<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">boolean</span>    <span class="token comment">// 비활성화 여부</span>
+  onClick<span class="token operator">?</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token keyword">void</span>  <span class="token comment">// 클릭시</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">CheckBox</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>label<span class="token punctuation">,</span> props<span class="token punctuation">}</span><span class="token operator">:</span>  CheckBoxProps<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token operator">&lt;</span>label css<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span>style<span class="token punctuation">,</span> props<span class="token punctuation">.</span>disabled <span class="token operator">&amp;&amp;</span> disabledStyle<span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token operator">></span>
+        <span class="token comment">// value를 저장하기 위한 용도</span>
+        <span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">"checkbox"</span> <span class="token punctuation">{</span><span class="token operator">...</span>props<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
+
+        <span class="token comment">// 실제 체크박스</span>
+        <span class="token operator">&lt;</span>span className<span class="token operator">=</span><span class="token string">"checkbox"</span><span class="token operator">></span>
+            <span class="token punctuation">{</span>svg icon<span class="token punctuation">}</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
+
+        <span class="token comment">// 체크박스의 라벨</span>
+        <span class="token operator">&lt;</span>span<span class="token operator">></span> <span class="token punctuation">{</span>label<span class="token punctuation">}</span> <span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>label<span class="token operator">></span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> style <span class="token operator">=</span> css<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token template-punctuation string">`</span></span>
+
+<span class="token keyword">const</span> disabledStyled <span class="token operator">=</span> css<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token template-punctuation string">`</span></span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<br>
+<br>
+<br>
+<h3 id="-스타일-씌우기" style="position:relative;">🗡 스타일 씌우기<a href="#-%EC%8A%A4%ED%83%80%EC%9D%BC-%EC%94%8C%EC%9A%B0%EA%B8%B0" aria-label=" 스타일 씌우기 permalink" class="anchor-header after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h3>
+<p><strong>( 핵심 디테일 )</strong></p>
+<ul>
+<li>hover시
+<ul>
+<li>컨테이너 background 색상 변화</li>
+<li>체크박스 border 색상 변화</li>
+<li>커서 변화</li>
+</ul>
+</li>
+<li>check시
+<ul>
+<li>체크박스에 zoom-in-out 효과</li>
+<li>체크박스 background 색상 바뀌기</li>
+<li>체크마크 그려지기</li>
+</ul>
+</li>
+<li>disabled시
+<ul>
+<li>hover, 클릭 불가.</li>
+<li>opacity를 줄여준다.</li>
+</ul>
+</li>
+</ul>
+<br>
+<h4 id="-ui-만들기-" style="position:relative;">( UI 만들기 )<a href="#-ui-%EB%A7%8C%EB%93%A4%EA%B8%B0-" aria-label=" ui 만들기  permalink" class="anchor-header after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h4>
+<p>레이아웃 잡기</p>
+<div class="gatsby-highlight" data-language="css"><pre style="counter-reset: linenumber NaN" class="language-css line-numbers"><code class="language-css"> <span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-flex<span class="token punctuation">;</span>
+  <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 6px 8px<span class="token punctuation">;</span>
+  <span class="token property">border-radius</span><span class="token punctuation">:</span> 6px<span class="token punctuation">;</span>
+  <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span> <span class="token comment">/* border를 초과된 부분을 숨긴다 */</span>
+  <span class="token comment">/* ... */</span>
+
+  <span class="token selector">.checkbox</span> <span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+    <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+    <span class="token property">justify-content</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+    <span class="token comment">/* ... */</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token selector">span:last-child</span> <span class="token punctuation">{</span>
+    <span class="token property">padding-left</span><span class="token punctuation">:</span> 8px<span class="token punctuation">;</span>
+    <span class="token property">line-height</span><span class="token punctuation">:</span> 21px<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<br>
+<p>기존 체크박스 숨기기</p>
+<div class="gatsby-highlight" data-language="css"><pre style="counter-reset: linenumber NaN" class="language-css line-numbers"><code class="language-css"><span class="token selector">input[type="checkbox"]</span> <span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span></span></pre></div>
+<br>
+<p>체크 박스 형태 그리기</p>
+<div class="gatsby-highlight" data-language="css"><pre style="counter-reset: linenumber NaN" class="language-css line-numbers"><code class="language-css"><span class="token selector">.checkbox</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 18px<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 18px<span class="token punctuation">;</span>
+  <span class="token property">border-radius</span><span class="token punctuation">:</span> 4px<span class="token punctuation">;</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 1px solid #dedede<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #f8f8f8<span class="token punctuation">;</span>
+  <span class="token comment">/* ... */</span>
+<span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<br>
+<p>체크 마크 그리기</p>
+<p><a href="https://iconmonstr.com/?s=check">여기서</a> 가져와 써도 된다</p>
+<div class="gatsby-highlight" data-language="javascript"><pre style="counter-reset: linenumber NaN" class="language-javascript line-numbers"><code class="language-javascript"><span class="token operator">&lt;</span>span className<span class="token operator">=</span><span class="token string">"checkbox"</span><span class="token operator">></span>
+  <span class="token operator">&lt;</span>svg width<span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">12</span><span class="token punctuation">}</span> height<span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">10</span><span class="token punctuation">}</span> viewBox<span class="token operator">=</span><span class="token string">"0 0 12 10"</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>polyline
+      points<span class="token operator">=</span><span class="token string">"1.5 6 4.5 9 10.5 1"</span>
+      strokeLinecap<span class="token operator">=</span><span class="token string">"round"</span>
+      strokeLinejoin<span class="token operator">=</span><span class="token string">"round"</span>
+      strokeWidth<span class="token operator">=</span><span class="token string">"2"</span>
+    <span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>polyline<span class="token operator">></span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>svg<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="css"><pre style="counter-reset: linenumber NaN" class="language-css line-numbers"><code class="language-css"><span class="token selector">svg</span> <span class="token punctuation">{</span>
+  <span class="token property">fill</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">stroke</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
+  <span class="token property">stroke-dasharray</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+  <span class="token property">stroke-dashoffset</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<br>
+<br>
+<h4 id="-에니메이션-효과-넣기-" style="position:relative;">( 에니메이션 효과 넣기 )<a href="#-%EC%97%90%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98-%ED%9A%A8%EA%B3%BC-%EB%84%A3%EA%B8%B0-" aria-label=" 에니메이션 효과 넣기  permalink" class="anchor-header after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h4>
+<p>색상은 css변수로 관리하기</p>
+<div class="gatsby-highlight" data-language="css"><pre style="counter-reset: linenumber NaN" class="language-css line-numbers"><code class="language-css"><span class="token property">--checked-color</span><span class="token punctuation">:</span> #588ced<span class="token punctuation">;</span>
+<span class="token property">--hover-background</span><span class="token punctuation">:</span> #dee9ff70<span class="token punctuation">;</span>
+<span class="token property">--text-color</span><span class="token punctuation">:</span> #65636a<span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span></span></pre></div>
+<br>
+<p>커서</p>
+<div class="gatsby-highlight" data-language="scss"><pre style="counter-reset: linenumber NaN" class="language-scss line-numbers"><code class="language-scss"><span class="token property">user-select</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span> <span class="token comment">// 드래그 불가</span>
+<span class="token property">cursor</span><span class="token punctuation">:</span> pointer<span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<br>
+<p>hover시</p>
+<div class="gatsby-highlight" data-language="scss"><pre style="counter-reset: linenumber NaN" class="language-scss line-numbers"><code class="language-scss"><span class="token selector"><span class="token parent important">&amp;</span>:hover </span><span class="token punctuation">{</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--hover-background<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token selector">.checkbox </span><span class="token punctuation">{</span>
+    <span class="token property">border-color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--checked-color<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<br>
+<p>checked시</p>
+<div class="gatsby-highlight" data-language="scss"><pre style="counter-reset: linenumber NaN" class="language-scss line-numbers"><code class="language-scss"><span class="token selector">.checkbox </span><span class="token punctuation">{</span>
+  <span class="token comment">// ... 줌인아웃 효과</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transition</span><span class="token punctuation">:</span> all 0.3s ease<span class="token punctuation">;</span>
+  <span class="token selector">svg </span><span class="token punctuation">{</span>
+    <span class="token comment">//... 마크 그리기 효과</span>
+    <span class="token property">stroke-dasharray</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+    <span class="token property">stroke-dashoffset</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+    <span class="token property">transition</span><span class="token punctuation">:</span> all 0.3s ease<span class="token punctuation">;</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translate3d</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">input:checked + .checkbox </span><span class="token punctuation">{</span>
+  <span class="token comment">// ... 줌인아웃 효과</span>
+  <span class="token property">animation</span><span class="token punctuation">:</span> zoom-in-out 0.3s ease<span class="token punctuation">;</span>
+  <span class="token selector">svg </span><span class="token punctuation">{</span>
+    <span class="token comment">//... 마크 그리기 효과</span>
+    <span class="token property">stroke-dashoffset</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token atrule"><span class="token rule">@keyframes</span> zoom-in-out</span> <span class="token punctuation">{</span>
+  <span class="token selector">50% </span><span class="token punctuation">{</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>0.9<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<br>
+<h4 id="-disabled-효과-넣기-" style="position:relative;">( disabled 효과 넣기 )<a href="#-disabled-%ED%9A%A8%EA%B3%BC-%EB%84%A3%EA%B8%B0-" aria-label=" disabled 효과 넣기  permalink" class="anchor-header after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h4>
+<p>css 선택자로 하기에는 너무 복잡하니 props으로 전달 받은 값을 활용하자.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre style="counter-reset: linenumber NaN" class="language-javascript line-numbers"><code class="language-javascript"><span class="token operator">&lt;</span>label css<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span>style<span class="token punctuation">,</span> props<span class="token punctuation">.</span>disabled <span class="token operator">&amp;&amp;</span> disabledStyle<span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>label<span class="token operator">></span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> disabledStyle <span class="token operator">=</span> css<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  pointer-events: none;
+  opacity: 0.5;
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<br>
+<br>
+<br>
+<h3 id="-checkgroup-만들기" style="position:relative;">🗡 CheckGroup 만들기<a href="#-checkgroup-%EB%A7%8C%EB%93%A4%EA%B8%B0" aria-label=" checkgroup 만들기 permalink" class="anchor-header after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h3>
+<p>보통 CheckBox를 하나만 만들지 않기에 편하게 여러개 만들고 제어하자.</p>
+<ul>
+<li><code class="language-text">labels</code>에 index로 매핑하는 <code class="language-text">checkList</code>을 받아서 사용</li>
+<li>index 기반으로 해당 체크박스를 체크한다.</li>
+<li><code class="language-text">checkedList</code> <code class="language-text">onCheck</code> 없이 form으로도 사용할 수 있어 <code class="language-text">required</code> 하지 않는다. (추후 방법 추가)</li>
+</ul>
+<div class="gatsby-highlight" data-language="ts"><pre style="counter-reset: linenumber NaN" class="language-ts line-numbers"><code class="language-ts"><span class="token keyword">interface</span> <span class="token class-name">CheckGroupProps</span> <span class="token punctuation">{</span>
+  labels<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  checkedList<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">boolean</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  onCheck<span class="token operator">?</span><span class="token operator">:</span> <span class="token punctuation">(</span>index<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token keyword">void</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">CheckGroup</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+  labels<span class="token punctuation">,</span>
+  checkedList<span class="token punctuation">,</span>
+  onCheck<span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token operator">:</span> CheckGroupProps<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span><span class="token operator">></span>
+      <span class="token punctuation">{</span>labels<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span> i<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">(</span>
+        <span class="token operator">&lt;</span>CheckBox
+          key<span class="token operator">=</span><span class="token punctuation">{</span>v<span class="token punctuation">}</span>
+          label<span class="token operator">=</span><span class="token punctuation">{</span>labels<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">}</span>
+          <span class="token punctuation">{</span><span class="token operator">...</span><span class="token punctuation">(</span>checkedList <span class="token operator">&amp;&amp;</span> <span class="token punctuation">{</span> checked<span class="token operator">:</span> checkedList<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+          <span class="token punctuation">{</span><span class="token operator">...</span><span class="token punctuation">(</span>onCheck <span class="token operator">&amp;&amp;</span> <span class="token punctuation">{</span> <span class="token function-variable function">onClick</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token function">onCheck</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+        <span class="token operator">/</span><span class="token operator">></span>
+      <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span><span class="token operator">></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<br>
+<br>
+<br>
+<h3 id="-custom-hook-만들기" style="position:relative;">🗡 Custom Hook 만들기<a href="#-custom-hook-%EB%A7%8C%EB%93%A4%EA%B8%B0" aria-label=" custom hook 만들기 permalink" class="anchor-header after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h3>
+<p>매번 state 덕질하고 onCheck 함수 만들 생각하면 머리가 어질어질하다. 물론 form으로 해결해도 되지만.<br>
+체크박스 전부 선택했는지 파악하기 코드가 지저분해진다.</p>
+<p>편하게 만들어 보자.</p>
+<ul>
+<li>label에 index로 매핑하는 <code class="language-text">boolean[]</code>을 만든다.</li>
+</ul>
+<div class="gatsby-highlight" data-language="ts"><pre style="counter-reset: linenumber NaN" class="language-ts line-numbers"><code class="language-ts"><span class="token keyword">import</span> <span class="token punctuation">{</span> CheckGroup <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"@components/Input"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> useState <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"react"</span><span class="token punctuation">;</span>
+
+<span class="token keyword">interface</span> <span class="token class-name">Props</span> <span class="token punctuation">{</span>
+  labels<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  defaultChecks<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">boolean</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">useChecks</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> labels<span class="token punctuation">,</span> defaultChecks <span class="token punctuation">}</span><span class="token operator">:</span> Props<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">[</span>checkedList<span class="token punctuation">,</span> setCheckedList<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span>
+    labels<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>_<span class="token punctuation">,</span> i<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token operator">!</span><span class="token operator">!</span>defaultChecks <span class="token operator">&amp;&amp;</span> defaultChecks<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> isAllChecked <span class="token operator">=</span> checkedList<span class="token punctuation">.</span><span class="token function">every</span><span class="token punctuation">(</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token operator">=></span> x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> <span class="token function-variable function">onCheckAll</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token function">setCheckedList</span><span class="token punctuation">(</span>labels<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token operator">!</span>isAllChecked<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> <span class="token function-variable function">onCheck</span> <span class="token operator">=</span> <span class="token punctuation">(</span>index<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token function">setCheckedList</span><span class="token punctuation">(</span><span class="token punctuation">(</span>checks<span class="token punctuation">)</span> <span class="token operator">=></span> checks<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span> i<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">(</span>i <span class="token operator">===</span> index <span class="token operator">?</span> <span class="token operator">!</span>v <span class="token operator">:</span> v<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> <span class="token function-variable function">renderChecks</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>CheckGroup labels<span class="token operator">=</span><span class="token punctuation">{</span>labels<span class="token punctuation">}</span> checkedList<span class="token operator">=</span><span class="token punctuation">{</span>checkedList<span class="token punctuation">}</span> onCheck<span class="token operator">=</span><span class="token punctuation">{</span>onCheck<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">{</span> isAllChecked<span class="token punctuation">,</span> checkedList<span class="token punctuation">,</span> onCheckAll<span class="token punctuation">,</span> renderChecks <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<br>
+<br>
+<h3 id="-story-만들기" style="position:relative;">🗡 Story 만들기<a href="#-story-%EB%A7%8C%EB%93%A4%EA%B8%B0" aria-label=" story 만들기 permalink" class="anchor-header after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h3>
+<div class="gatsby-highlight" data-language="ts"><pre style="counter-reset: linenumber NaN" class="language-ts line-numbers"><code class="language-ts"><span class="token keyword">import</span> <span class="token punctuation">{</span> useChecks <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"@hooks"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> CheckBox<span class="token punctuation">,</span> CheckGroup <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"./CheckBox"</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  title<span class="token operator">:</span> <span class="token string">"Input/Checkbox"</span><span class="token punctuation">,</span>
+  component<span class="token operator">:</span> CheckBox<span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">Default</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span><span class="token operator">></span>
+      <span class="token operator">&lt;</span>CheckBox label<span class="token operator">=</span><span class="token string">"사과연구반"</span> <span class="token operator">/</span><span class="token operator">></span>
+      <span class="token operator">&lt;</span>CheckBox label<span class="token operator">=</span><span class="token string">"망고지연구반"</span> defaultChecked <span class="token operator">/</span><span class="token operator">></span>
+      <span class="token operator">&lt;</span>CheckBox label<span class="token operator">=</span><span class="token string">"망고지연구반"</span> disabled <span class="token operator">/</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span><span class="token operator">></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">WithHook</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> isAllChecked<span class="token punctuation">,</span> onCheckAll<span class="token punctuation">,</span> renderChecks <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">useChecks</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    labels<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"check1"</span><span class="token punctuation">,</span> <span class="token string">"check2"</span><span class="token punctuation">,</span> <span class="token string">"check3"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    defaultChecks<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>div<span class="token operator">></span>
+      <span class="token operator">&lt;</span>CheckBox label<span class="token operator">=</span><span class="token string">"전체선택"</span> checked<span class="token operator">=</span><span class="token punctuation">{</span>isAllChecked<span class="token punctuation">}</span> onClick<span class="token operator">=</span><span class="token punctuation">{</span>onCheckAll<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
+      <span class="token punctuation">{</span><span class="token function">renderChecks</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<br>
+<br>
+<br>
+<h3 id="참고" style="position:relative;">참고<a href="#%EC%B0%B8%EA%B3%A0" aria-label="참고 permalink" class="anchor-header after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h3>
+<ul>
+<li><a href="https://engineering.linecorp.com/ko/blog/line-securities-frontend-3/">https://engineering.linecorp.com/ko/blog/line-securities-frontend-3/</a></li>
+<li><a href="https://www.30secondsofcode.org/css/s/custom-checkbox">https://www.30secondsofcode.org/css/s/custom-checkbox</a></li>
+<li><a href="https://stackoverflow.com/questions/26754497/css-disable-hover-effect">https://stackoverflow.com/questions/26754497/css-disable-hover-effect</a></li>
+</ul></div><style data-emotion="css a5fci7">.css-a5fci7{position:fixed;position:-webkit-sticky;top:250px;right:calc(((100% - 960px) / 2) - 220px);max-width:220px;max-height:90%;overflow:hidden;}.css-a5fci7 h5{text-indent:10px;margin-bottom:8px;}.css-a5fci7 p,.css-a5fci7 ul,.css-a5fci7 li{list-style:none;margin-top:0;margin-bottom:0;line-height:30px;text-indent:10px;font-size:13px;}.css-a5fci7 a{-webkit-text-decoration:none;text-decoration:none;text-overflow:ellipsis;white-space:nowrap;color:grey;}</style><div class="css-a5fci7 e18by7i00"><style data-emotion="css 5mbhvq">.css-5mbhvq li.active>a,.css-5mbhvq a:hover,.css-5mbhvq a[href*=""]{color:black;}</style><div class="css-5mbhvq"><ul>
+<li>
+<p><a href="#-checkbox-%EB%BC%88%EB%8C%80">🗡 CheckBox 뼈대</a></p>
+</li>
+<li>
+<p><a href="#-%EC%8A%A4%ED%83%80%EC%9D%BC-%EC%94%8C%EC%9A%B0%EA%B8%B0">🗡 스타일 씌우기</a></p>
+<ul>
+<li><a href="#-ui-%EB%A7%8C%EB%93%A4%EA%B8%B0-">( UI 만들기 )</a></li>
+<li><a href="#-%EC%97%90%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98-%ED%9A%A8%EA%B3%BC-%EB%84%A3%EA%B8%B0-">( 에니메이션 효과 넣기 )</a></li>
+<li><a href="#-disabled-%ED%9A%A8%EA%B3%BC-%EB%84%A3%EA%B8%B0-">( disabled 효과 넣기 )</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#-checkgroup-%EB%A7%8C%EB%93%A4%EA%B8%B0">🗡 CheckGroup 만들기</a></p>
+</li>
+<li>
+<p><a href="#-custom-hook-%EB%A7%8C%EB%93%A4%EA%B8%B0">🗡 Custom Hook 만들기</a></p>
+</li>
+<li>
+<p><a href="#-story-%EB%A7%8C%EB%93%A4%EA%B8%B0">🗡 Story 만들기</a></p>
+</li>
+<li>
+<p><a href="#%EC%B0%B8%EA%B3%A0">참고</a></p>
+</li>
+</ul></div></div></div></main><style data-emotion="css ksj7n1">.css-ksj7n1{margin:0 1.0875rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;-webkit-justify-content:flex-end;justify-content:flex-end;}.css-ksj7n1>:not(:first-of-type){margin-left:4px;}.css-ksj7n1>p{font-size:14px;}</style><footer class="css-ksj7n1 e1g6m4zg0"><p>©</p><p>bepyan</p></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-27VK5FH7WW"></script><script>
+    window.GATSBY_GTAG_PLUGIN_GA_TRACKING_ID = (
+      'G-27VK5FH7WW'
+    );
+    window.GATSBY_GTAG_PLUGIN_ANONYMIZE = true;
+
+    var options = {
+      send_page_view: false
+    };
+    if (true) {
+      options.anonymize_ip = true;
+    }
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', 'G-27VK5FH7WW', options);
+  </script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blog/react-storybook/2";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-0ee38670ea98a3bc3183.js"],"app":["/app-4797a0e7c9c6a0c046ed.js"],"component---src-pages-404-js":["/component---src-pages-404-js-2ed31d3d9e10aa5a784d.js"],"component---src-pages-blog-js":["/component---src-pages-blog-js-59c08050d65e126ed6e7.js"],"component---src-pages-index-js":["/component---src-pages-index-js-20b6ee341719341537de.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-e46d7168bdeed87f4158.js"]};/*]]>*/</script><script src="/polyfill-0ee38670ea98a3bc3183.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-e46d7168bdeed87f4158.js" async=""></script><script src="/commons-bc1d510cf883c908f875.js" async=""></script><script src="/app-4797a0e7c9c6a0c046ed.js" async=""></script><script src="/framework-30aab022bb8682845c56.js" async=""></script><script src="/webpack-runtime-1d4c1d11dcb3ee08c681.js" async=""></script></body></html>

@@ -3,6 +3,8 @@ title: "( React Storybook ) CheckBox 만들기"
 date: "2021-10-17"
 draft: false
 path: "/blog/react-storybook/2"
+series: "React Storybook"
+tags: ["React", "Storybook"]
 ---
 
 ![landing image](https://user-images.githubusercontent.com/65283190/137625859-a4795643-a94c-44eb-97c9-d93f5b518728.gif)

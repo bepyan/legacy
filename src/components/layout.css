@@ -45,11 +45,15 @@ template {
 }
 a {
   font-style: normal;
-  color: hsla(0, 0%, 0%, 0.8);
+  color: #5f6c80;
   -webkit-text-decoration-skip: objects;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out 0s;
 }
 a:active,
 a:hover {
+  color: hsla(0, 0%, 0%, 0.8);
+  text-decoration: underline;
   outline-width: 0;
 }
 abbr[title] {
@@ -645,16 +649,20 @@ code .token::selection {
 summary {
   cursor: pointer;
   font-weight: 600;
+  color: #000000bb;
 }
 summary > * {
   display: inline;
 }
+summary:hover {
+  color: #1d1f21;
+}
+detilas {
+  overflow: hidden;
+}
 details > summary::before {
   content: "+";
   font-family: monospace;
-}
-details[open] > summary::before {
-  content: "-";
 }
 
 .gatsby-highlight {

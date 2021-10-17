@@ -1,7 +1,12 @@
 import React from "react";
 import { graphql } from "gatsby";
 import styled from "@emotion/styled";
-import { Layout, SearchEngine, TableOfContents } from "../components";
+import {
+  Layout,
+  SearchEngine,
+  SeriesCard,
+  TableOfContents,
+} from "../components";
 import { useTocScroll } from "../hooks";
 
 const BlogPost = ({ data }) => {
@@ -17,9 +22,14 @@ const BlogPost = ({ data }) => {
       <Content>
         <MarkedHeader>{frontmatter.title}</MarkedHeader>
         <HeaderDate>
-          {frontmatter.date} · {post.fields.readingTime.text}
+          {frontmatter.date} · {frontmatter.tags.join(", ")} ·{" "}
+          {post.fields.readingTime.text}
         </HeaderDate>
+
+        {frontmatter.series && <SeriesCard series={frontmatter.series} />}
+
         <MarkdownContent dangerouslySetInnerHTML={{ __html: post.html }} />
+
         <TableOfContents
           items={tableOfContents}
           currentHeaderUrl={currentHeaderUrl}
@@ -30,16 +40,18 @@ const BlogPost = ({ data }) => {
 };
 export default BlogPost;
 
-export const pageQuery = graphql`
+export const query = graphql`
   query ($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       tableOfContents
       excerpt(pruneLength: 160)
       frontmatter {
-        date(formatString: "YYYY MMM DD")
+        date(formatString: "YYYY.MM.DD")
         path
         title
+        tags
+        series
       }
       fields {
         readingTime {
@@ -58,14 +70,16 @@ const Content = styled.div`
 
 const MarkedHeader = styled.h1`
   display: inline;
+  font-weight: 800;
 `;
 
 const HeaderDate = styled.h3`
-  margin-top: 10px;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
   color: #606060;
 `;
 
-// STYLE THE TAGS INSIDE THE MARKDOWN HERE
 const MarkdownContent = styled.div`
   a {
     text-decoration: none;

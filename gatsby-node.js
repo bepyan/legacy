@@ -1,20 +1,5 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
-
-// You can delete this file if you're not using it
-
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
-
-// You can delete this file if you're not using it
-
 const path = require(`path`);
+const _ = require(`lodash`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
@@ -29,18 +14,23 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 };
 
-exports.createPages = ({ graphql, actions }) => {
+exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
-  const blogPostTemplate = path.resolve(`src/templates/BlogPost.js`);
-  return graphql(`
+  const BlogPostTemplate = path.resolve(`src/templates/BlogPost.js`);
+  const TagsTemplate = path.resolve(`src/templates/Tags.js`);
+  // const SeriesTemplate = path.resolve(`src/templates/Series.js`);
+
+  const { data, errors } = await graphql(`
     {
-      allMarkdownRemark {
+      posts: allMarkdownRemark {
         edges {
           node {
             frontmatter {
               path
               draft
               date
+              series
+              tags
             }
             fields {
               slug
@@ -48,20 +38,53 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
+      tagsGroup: allMarkdownRemark {
+        group(field: frontmatter___tags) {
+          tag: fieldValue
+        }
+      }
+      seriesGroup: allMarkdownRemark {
+        group(field: frontmatter___series) {
+          series: fieldValue
+        }
+      }
     }
-  `).then((result) => {
-    if (result.errors) {
-      return Promise.reject(result.errors);
-    }
-    result.data.allMarkdownRemark.edges
-      .filter(({ node }) => !node.frontmatter.draft)
-      .forEach(({ node }) => {
-        createPage({
-          path: node.frontmatter.path,
-          component: blogPostTemplate,
-          slug: node.fields.slug,
-          context: {},
-        });
+  `);
+  if (errors) return Promise.reject(errors);
+
+  // 포스트 페이지 만들기
+  data.posts.edges
+    .filter(({ node }) => !node.frontmatter.draft)
+    .forEach(({ node }) => {
+      createPage({
+        path: node.frontmatter.path,
+        component: BlogPostTemplate,
+        context: {},
       });
+    });
+
+  // 태그 만들기
+  data.tagsGroup.group.forEach(({ tag }) => {
+    createPage({
+      path: `/tags/${_.kebabCase(tag)}/`,
+      component: TagsTemplate,
+      context: {
+        tag,
+      },
+    });
   });
+
+  // 시리즈 만들기
+  data.posts.edges
+    .reduce((ac, { node }) => {
+      const { series } = node.frontmatter;
+      return [...new Set([...ac, series])];
+    }, [])
+    .forEach((series) => {
+      createPage({
+        path: `/series/${_.kebabCase(series)}/`,
+        component: TagsTemplate,
+        context: {},
+      });
+    });
 };

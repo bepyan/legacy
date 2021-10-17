@@ -3,14 +3,9 @@ title: "( 면접대비 ) Javascript"
 date: "2021-10-14"
 draft: false
 path: "/blog/cs/js"
+series: "면접 대비하기"
+tags: ["CS", "면접"]
 ---
-
-- [🗡 함수 표현식 Function Expression](#-함수-표현식-function-expression)
-- [🗡 화살표 함수 Arrow Function](#-화살표-함수-arrow-function)
-- [🗡 참고](#-참고)
-
-<br>
-<br>
 
 ### 🗡 함수 표현식 Function Expression
 

@@ -3,6 +3,8 @@ title: "( 면접대비 ) 객체지향과 함수형 프로그래밍"
 date: "2021-10-12"
 draft: false
 path: "/blog/cs/1"
+series: "면접 대비하기"
+tags: ["CS", "면접"]
 ---
 
 <br>

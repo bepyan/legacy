@@ -10,7 +10,13 @@ const BlogPage = ({ data }) => {
     <Layout>
       <SearchEngine title="Blog" />
       <Content>
-        <Title>Blog</Title>
+        <Header>
+          <h1>Blog</h1>
+          <div>
+            <Link to="/tags">Tags</Link>
+            <Link to="/series">Series</Link>
+          </div>
+        </Header>
         {data.allMarkdownRemark.edges
           .filter(({ node }) => {
             const rawDate = node.frontmatter.rawDate;
@@ -59,7 +65,7 @@ export const query = graphql`
           id
           frontmatter {
             title
-            date(formatString: "YYYY MMM DD")
+            date(formatString: "YYYY.MM.DD")
             rawDate: date
             path
           }
@@ -82,8 +88,22 @@ const Content = styled.div`
   padding: 1.45rem 1.0875rem;
 `;
 
-const Title = styled.h1`
+const Header = styled.div`
+  display: flex;
+  align-items: flex-end;
   margin-bottom: 3.5rem;
+
+  & > * {
+    margin-bottom: 0px;
+  }
+  div {
+    margin-left: auto;
+    display: flex;
+    align-items: flex-end;
+    & > * {
+      margin-left: 1rem;
+    }
+  }
 `;
 
 const MarkerHeader = styled.h3`
@@ -99,11 +119,13 @@ const MarkerHeader = styled.h3`
 const ArticleDate = styled.h5`
   display: inline;
   color: #606060;
+  font-weight: 400;
 `;
 
 const ReadingTime = styled.h5`
   display: inline;
   color: #606060;
+  font-weight: 400;
 `;
 
 const PreviewText = styled.p`

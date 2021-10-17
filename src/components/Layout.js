@@ -56,6 +56,7 @@ const Footer = styled.footer`
   margin: 0 1.0875rem;
   display: flex;
   justify-content: flex-end;
+  user-select: none;
   & > :not(:first-of-type) {
     margin-left: 4px;
   }

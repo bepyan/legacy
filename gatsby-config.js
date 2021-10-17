@@ -36,12 +36,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-emotion`,
     {
-      resolve: "gatsby-plugin-anchor-links",
-      options: {
-        offset: -100,
-      },
-    },
-    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
@@ -49,12 +43,10 @@ module.exports = {
           {
             resolve: `gatsby-remark-autolink-headers`,
             options: {
-              // icon: false,
               className: `anchor-header`,
               isIconAfterHeader: true,
               maintainCase: false,
               removeAccents: true,
-              elements: [`h1`, `h2`, `h3`],
             },
           },
           {

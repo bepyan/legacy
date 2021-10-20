@@ -103,3 +103,106 @@ work();
 
 - https://joshua1988.github.io/web-development/javascript/function-expressions-vs-declarations/
 - https://ko.javascript.info/function-expressions#ref-127
+
+<br>
+<br>
+
+### 🗡 앞으로 정리할 것.
+
+<details>
+<summary>&nbsp; Object과 Map</summary>
+<p>
+
+- `key`, `순회`
+- Object는 string으로 된 키만 사용할 수 있다.
+- Map은 모든 객체가 key가 될 수 있다.
+- Object의 key를 delete할 때 성능적인 이슈가 있다고 한다.
+
+</p>
+</details>
+
+<br>
+
+<details>
+<summary>&nbsp; this란 무엇인가요</summary>
+<p>
+
+</p>
+</details>
+
+<br>
+
+<details>
+<summary>&nbsp; call, bind, apply에 대해서 설명해주세요.</summary>
+<p>
+
+- 함수의 컨택스트를 변경시켜주는 함수입니다.
+- 추가요망
+
+</p>
+</details>
+
+<br>
+
+<details>
+<summary>&nbsp; 가상 DOM에 대해서 설명해주세요.</summary>
+<p>
+
+- 연산의 최종적인 결과를 주어 진다.
+
+</p>
+</details>
+
+<br>
+
+<details>
+<summary>&nbsp; Typescript를 사용하는 이유가 뭔가요?</summary>
+<p>
+
+- 명시적 타입을 저정할 수 있어서 더욱 안정적인 프로그래밍을 할 수 있습니다.
+- 타입이 맞지않는 연산에 대해서 실행시점이 아닌 컴파일단계에서
+- 모듈을 공유하기 편하다.
+- 타입에 대한 러닝커브가 존재하지만 더욱 빠르게 개발할 수 있게 된다.
+
+</p>
+</details>
+
+<br>
+
+<details>
+<summary>&nbsp; CDN이 뭔가요?</summary>
+<p>
+
+- 컨탠츠를 내려받을 수 있는 네트워크입니다.
+- 지역성, 속도
+
+</p>
+</details>
+
+<br>
+
+<details>
+<summary>&nbsp; 웹 접근성과 시맨틱 마크업에 대해서 설명해주세요.</summary>
+<p>
+
+- 웹 접근성은 장애가 누구나 웹을 접근할 수 있게.
+  - WAI-ARIA
+- 시맨틱 마크업은 태그를 div로
+
+</p>
+</details>
+
+<br>
+
+<details>
+<summary>&nbsp; Bable</summary>
+<p>
+
+- `Cross Browing` `트랜스 파일링`
+- 웹팩은 여러 파일들을 하나의 파일로 모아주는
+- 여러 모듈 파일을 하나의 모듈 파일로 모아준다.
+
+</p>
+</details>
+
+<br>

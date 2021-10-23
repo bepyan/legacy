@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-tags-js",
     "path": "/tags/면접/",
-    "result": {"data":{"allMarkdownRemark":{"totalCount":4,"edges":[{"node":{"frontmatter":{"title":"( 면접대비 ) 프로젝트, 협업","path":"/blog/cs/5"}}},{"node":{"frontmatter":{"title":"( 면접대비 ) 개발상식","path":"/blog/cs/2"}}},{"node":{"frontmatter":{"title":"( 면접대비 ) Javascript","path":"/blog/cs/js"}}},{"node":{"frontmatter":{"title":"( 면접대비 ) 객체지향과 함수형 프로그래밍","path":"/blog/cs/1"}}}]}},"pageContext":{"tag":"면접"}},
+    "result": {"data":{"allMarkdownRemark":{"totalCount":5,"edges":[{"node":{"frontmatter":{"title":"( 면접대비 ) Operating System 총정리","path":"/blog/cs/os"}}},{"node":{"frontmatter":{"title":"( 면접대비 ) 자아설찰, 경험","path":"/blog/cs/5"}}},{"node":{"frontmatter":{"title":"( 면접대비 ) Javascript","path":"/blog/cs/js"}}},{"node":{"frontmatter":{"title":"( 면접대비 ) 개발상식","path":"/blog/cs/2"}}},{"node":{"frontmatter":{"title":"( 면접대비 ) 객체지향과 함수형 프로그래밍","path":"/blog/cs/1"}}}]}},"pageContext":{"tag":"면접"}},
     "staticQueryHashes": ["210451802","3139552914","3649515864","63159454"]}

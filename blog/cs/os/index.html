@@ -1,0 +1,606 @@
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.0a5d61d601323b901140.css" data-identity="gatsby-global-css">code[class*=language-],pre[class*=language-]{color:#c5c8c6;direction:ltr;font-family:Inconsolata,Monaco,Consolas,Courier New,Courier,monospace;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;text-align:left;text-shadow:0 1px rgba(0,0,0,.3);white-space:pre;word-break:normal;word-spacing:normal}pre[class*=language-]{border-radius:.3em;margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#1d1f21}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#7c7c7c}.token.punctuation{color:#c5c8c6}.namespace{opacity:.7}.token.keyword,.token.property,.token.tag{color:#96cbfe}.token.class-name{color:#ffffb6;text-decoration:underline}.token.boolean,.token.constant{color:#9c9}.token.deleted,.token.symbol{color:#f92672}.token.number{color:#ff73fd}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#a8ff60}.token.variable{color:#c6c5fe}.token.operator{color:#ededed}.token.entity{color:#ffffb6;cursor:help}.token.url{color:#96cbfe}.language-css .token.string,.style .token.string{color:#87c38a}.token.atrule,.token.attr-value{color:#f9ee98}.token.function{color:#dad085}.token.regex{color:#e9c062}.token.important{color:#fd971f}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}pre[class*=language-].line-numbers{counter-reset:linenumber;padding-left:3.8em;position:relative}pre[class*=language-].line-numbers>code{position:relative;white-space:inherit}.line-numbers .line-numbers-rows{border-right:1px solid #999;font-size:100%;left:-3.8em;letter-spacing:-1px;pointer-events:none;position:absolute;top:0;-webkit-user-select:none;-ms-user-select:none;user-select:none;width:3em}.line-numbers-rows>span{counter-increment:linenumber;display:block}.line-numbers-rows>span:before{color:#999;content:counter(linenumber);display:block;padding-right:.8em;text-align:right}@font-face{font-display:swap;font-family:Nunito;font-style:normal;font-weight:200;src:local("Nunito Extra Light "),local("Nunito-Extra Light"),url(/static/nunito-latin-200-9c225f46c4b37be88e1ec1bd7f951974.woff2) format("woff2"),url(/static/nunito-latin-200-6f8b98c692bbdfb3c11adf70835c1fbd.woff) format("woff")}@font-face{font-display:swap;font-family:Nunito;font-style:italic;font-weight:200;src:local("Nunito Extra Light italic"),local("Nunito-Extra Lightitalic"),url(/static/nunito-latin-200italic-f676cc0fc1961dfe535fee40bd8a278f.woff2) format("woff2"),url(/static/nunito-latin-200italic-d95e62d15b659c1faf86bc8bb07af37c.woff) format("woff")}@font-face{font-display:swap;font-family:Nunito;font-style:normal;font-weight:300;src:local("Nunito Light "),local("Nunito-Light"),url(/static/nunito-latin-300-b959e8d004563d8cd96dec306d73f91d.woff2) format("woff2"),url(/static/nunito-latin-300-3c037be66baa5e1d6617e2d83b246828.woff) format("woff")}@font-face{font-display:swap;font-family:Nunito;font-style:italic;font-weight:300;src:local("Nunito Light italic"),local("Nunito-Lightitalic"),url(/static/nunito-latin-300italic-22754f73f619e917723a99c1a84f277a.woff2) format("woff2"),url(/static/nunito-latin-300italic-120c351a2ef0bd18dc8a87d0046d648b.woff) format("woff")}@font-face{font-display:swap;font-family:Nunito;font-style:normal;font-weight:400;src:local("Nunito Regular "),local("Nunito-Regular"),url(/static/nunito-latin-400-aeb21b79a21841c44124bf8595764022.woff2) format("woff2"),url(/static/nunito-latin-400-e8aadc1b678fa56c9d09b8ea7ecb9f74.woff) format("woff")}@font-face{font-display:swap;font-family:Nunito;font-style:italic;font-weight:400;src:local("Nunito Regular italic"),local("Nunito-Regularitalic"),url(/static/nunito-latin-400italic-6eec535c10b0a90374671a497daca87c.woff2) format("woff2"),url(/static/nunito-latin-400italic-e7edf90e10765451acb6022211df0675.woff) format("woff")}@font-face{font-display:swap;font-family:Nunito;font-style:normal;font-weight:600;src:local("Nunito SemiBold "),local("Nunito-SemiBold"),url(/static/nunito-latin-600-84985ea9e2befff565748ded244d111e.woff2) format("woff2"),url(/static/nunito-latin-600-51aac6462452f9d89a71db9d49c3c8f5.woff) format("woff")}@font-face{font-display:swap;font-family:Nunito;font-style:italic;font-weight:600;src:local("Nunito SemiBold italic"),local("Nunito-SemiBolditalic"),url(/static/nunito-latin-600italic-492585a577ef5f8f0d69966bbb93e0c9.woff2) format("woff2"),url(/static/nunito-latin-600italic-90367a7e9657410d4b41ab5e9eb4d308.woff) format("woff")}@font-face{font-display:swap;font-family:Nunito;font-style:normal;font-weight:700;src:local("Nunito Bold "),local("Nunito-Bold"),url(/static/nunito-latin-700-df0b57e17a0940db5c525000bdd83ecf.woff2) format("woff2"),url(/static/nunito-latin-700-0ac78fedca8a4de6cedabd8762805817.woff) format("woff")}@font-face{font-display:swap;font-family:Nunito;font-style:italic;font-weight:700;src:local("Nunito Bold italic"),local("Nunito-Bolditalic"),url(/static/nunito-latin-700italic-0f07fb53b1ef8e6ff0f37ea657aa179d.woff2) format("woff2"),url(/static/nunito-latin-700italic-9f973b986df693b6804f392679b1748d.woff) format("woff")}@font-face{font-display:swap;font-family:Nunito;font-style:normal;font-weight:800;src:local("Nunito ExtraBold "),local("Nunito-ExtraBold"),url(/static/nunito-latin-800-500aa9f559d7be3a129d8484d9ce799b.woff2) format("woff2"),url(/static/nunito-latin-800-c7c17be068562f90752e938b5bcfeafb.woff) format("woff")}@font-face{font-display:swap;font-family:Nunito;font-style:italic;font-weight:800;src:local("Nunito ExtraBold italic"),local("Nunito-ExtraBolditalic"),url(/static/nunito-latin-800italic-7b698a6e7e155bf1ea223df2d3305362.woff2) format("woff2"),url(/static/nunito-latin-800italic-2b4ec9abf7de5a8d8e7ab5a0422c9c6c.woff) format("woff")}@font-face{font-display:swap;font-family:Nunito;font-style:normal;font-weight:900;src:local("Nunito Black "),local("Nunito-Black"),url(/static/nunito-latin-900-1baf75ebec1b2afdd6cf1e238a227fbb.woff2) format("woff2"),url(/static/nunito-latin-900-44df4f474f6fcd8dc05e1831ce423b7b.woff) format("woff")}@font-face{font-display:swap;font-family:Nunito;font-style:italic;font-weight:900;src:local("Nunito Black italic"),local("Nunito-Blackitalic"),url(/static/nunito-latin-900italic-e3c092a3e2314146e496821b2f051abb.woff2) format("woff2"),url(/static/nunito-latin-900italic-02a2b409ce7bbc6e9ba9844314a5e9b7.woff) format("woff")}html{scroll-behavior:smooth}code{background-color:rgba(0,0,0,.04)}body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:Nunito,Avenir,Helvetica,"sans-serif";margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{-webkit-text-decoration-skip:objects;color:#5f6c80;font-style:normal;text-decoration:none;transition:all .3s ease-in-out 0s}a:active,a:hover{color:rgba(0,0,0,.8);outline-width:0;text-decoration:underline}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{box-sizing:border-box;font:112.5%/1.45em georgia,serif;overflow-y:scroll}*,:after,:before{box-sizing:inherit}body{word-wrap:break-word;-ms-font-feature-settings:"kern","liga","clig","calt";font-feature-settings:"kern","liga","clig","calt";color:rgba(0,0,0,.8);font-kerning:normal;font-weight:400}img{margin:0 0 1.45rem;max-width:100%;padding:0}h1{font-size:2.25rem}h1,h2{text-rendering:optimizeLegibility;color:inherit;font-weight:700;line-height:1.1;margin:0 0 1.45rem;padding:0}h2{font-size:1.62671rem}h3{font-size:1.38316rem}h3,h4{text-rendering:optimizeLegibility;color:inherit;font-weight:700;line-height:1.1;margin:0 0 1.45rem;padding:0}h4{font-size:1rem}h5{font-size:.85028rem}h5,h6{text-rendering:optimizeLegibility;color:inherit;font-weight:700;line-height:1.1;margin:0 0 1.45rem;padding:0}h6{font-size:.78405rem}hgroup{margin:0 0 1.45rem;padding:0}ol,ul{list-style-image:none;list-style-position:outside;margin:0 0 1.45rem 1.45rem;padding:0}dd,dl,figure,p{margin:0 0 1.45rem;padding:0}pre{word-wrap:normal;background:rgba(0,0,0,.04);border-radius:3px;font-size:.8rem;line-height:1.42;margin:0 0 1.45rem;overflow:auto;padding:1.45rem}table{border-collapse:collapse;font-size:1rem;line-height:1.45rem;width:100%}fieldset,table{margin:0 0 1.45rem;padding:0}blockquote{margin:0 1.45rem 1.45rem;padding:0}form,iframe,noscript{margin:0 0 1.45rem;padding:0}hr{background:rgba(0,0,0,.2);border:none;height:1px;margin:0 0 calc(1.45rem - 1px);padding:0}address{margin:0 0 1.45rem;padding:0}b,dt,strong,th{font-weight:700}li{margin-bottom:.725rem}ol li,ul li{padding-left:0}li>ol,li>ul{margin-bottom:.725rem;margin-left:1.45rem;margin-top:.725rem}blockquote :last-child,li :last-child,p :last-child{margin-bottom:0}li>p{margin-bottom:.725rem}code,kbd,samp{font-size:.8rem;line-height:1.45rem}abbr,abbr[title],acronym{border-bottom:1px dotted rgba(0,0,0,.5);cursor:help}abbr[title]{text-decoration:none}td,th,thead{text-align:left}td,th{font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";border-bottom:1px solid rgba(0,0,0,.12);padding:.725rem .96667rem calc(.725rem - 1px)}td:first-child,th:first-child{padding-left:0}td:last-child,th:last-child{padding-right:0}code,tt{background-color:rgba(0,0,0,.04);border-radius:3px;font-family:SFMono-Regular,Consolas,Roboto Mono,Droid Sans Mono,Liberation Mono,Menlo,Courier,monospace;padding:0}pre code{background:none;line-height:1.42}code:after,code:before,tt:after,tt:before{content:" ";letter-spacing:-.2em}pre code:after,pre code:before,pre tt:after,pre tt:before{content:""}anchor,br{-webkit-user-select:none;-ms-user-select:none;user-select:none}em{margin:0 3px}a::selection,del::selection,em::selection,h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,h6::selection,img::selection,li::selection,p::selection,span::selection,strong::selection,summary::selection,td::selection,th::selection{background:#dee9ff}code .token::selection,code::selection{background:#dee9ff30}summary{color:#000000bb;cursor:pointer;font-weight:600}summary>*{display:inline}summary:hover{color:#1d1f21}detilas{overflow:hidden}details>summary:before{content:"+";font-family:monospace}details[open]>summary:before{content:"-";font-family:monospace}.gatsby-highlight{background-color:#1d1f21;border-radius:.3em;margin:.5em 0;overflow:auto;padding:1em}.gatsby-highlight pre[class*=language-].line-numbers{overflow:initial;padding:0 0 0 2.8em}@media only screen and (max-width:480px){html{font-size:100%}}</style><meta name="generator" content="Gatsby 3.14.2"/><link rel="sitemap" type="application/xml" href="/sitemap/sitemap-index.xml"/><title data-react-helmet="true">( 면접대비 ) Operating System 총정리 | Edward Kim</title><meta data-react-helmet="true" name="google-site-verification" content="IW87tE2IQja7BjGV4qw19t6Wk6Kcnmf-x-K5lrYWa28"/><meta data-react-helmet="true" name="naver-site-verification" content="3763a796b024affc5b7513ac77c47e6e03c8bdcf"/><meta data-react-helmet="true" name="description" content="🗡 운영체제 시스템의 자원과 동작을 관리하는 소프트웨어 🗡 프로세스 관리 프로그램 · 프로세스 · 스레드 프로그램 어떤 작업을 실행하는 파일이다. 하드 디스크 등에 저장되어 있는 실행코드 프로세스 OS…"/><meta data-react-helmet="true" property="og:title" content="( 면접대비 ) Operating System 총정리"/><meta data-react-helmet="true" property="og:description" content="🗡 운영체제 시스템의 자원과 동작을 관리하는 소프트웨어 🗡 프로세스 관리 프로그램 · 프로세스 · 스레드 프로그램 어떤 작업을 실행하는 파일이다. 하드 디스크 등에 저장되어 있는 실행코드 프로세스 OS…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="@bepyan"/><meta data-react-helmet="true" name="twitter:title" content="( 면접대비 ) Operating System 총정리"/><meta data-react-helmet="true" name="twitter:description" content="🗡 운영체제 시스템의 자원과 동작을 관리하는 소프트웨어 🗡 프로세스 관리 프로그램 · 프로세스 · 스레드 프로그램 어떤 작업을 실행하는 파일이다. 하드 디스크 등에 저장되어 있는 실행코드 프로세스 OS…"/><style type="text/css">
+    .anchor-header.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .anchor-header.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .anchor-header svg,
+    h2 .anchor-header svg,
+    h3 .anchor-header svg,
+    h4 .anchor-header svg,
+    h5 .anchor-header svg,
+    h6 .anchor-header svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor-header svg,
+    h2:hover .anchor-header svg,
+    h3:hover .anchor-header svg,
+    h4:hover .anchor-header svg,
+    h5:hover .anchor-header svg,
+    h6:hover .anchor-header svg,
+    h1 .anchor-header:focus svg,
+    h2 .anchor-header:focus svg,
+    h3 .anchor-header:focus svg,
+    h4 .anchor-header:focus svg,
+    h5 .anchor-header:focus svg,
+    h6 .anchor-header:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><link rel="icon" href="/favicon-32x32.png?v=230ecbf6441ae0cc6b010f0858ea55fe" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#1D1F21"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=230ecbf6441ae0cc6b010f0858ea55fe"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=230ecbf6441ae0cc6b010f0858ea55fe"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=230ecbf6441ae0cc6b010f0858ea55fe"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=230ecbf6441ae0cc6b010f0858ea55fe"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=230ecbf6441ae0cc6b010f0858ea55fe"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=230ecbf6441ae0cc6b010f0858ea55fe"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=230ecbf6441ae0cc6b010f0858ea55fe"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=230ecbf6441ae0cc6b010f0858ea55fe"/><link as="script" rel="preload" href="/webpack-runtime-0bafa2814e214cedc4de.js"/><link as="script" rel="preload" href="/framework-30aab022bb8682845c56.js"/><link as="script" rel="preload" href="/app-d47762784037f990d1ce.js"/><link as="script" rel="preload" href="/commons-f8da271c73aa67b1ddf1.js"/><link as="script" rel="preload" href="/3427b2c1161a6f09823c5f9386986cbf00268c94-ec590d9fbb637d097c59.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-f3c6282fa220f066ca7d.js"/><link as="fetch" rel="preload" href="/page-data/blog/cs/os/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/210451802.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3139552914.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3649515864.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/63159454.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><style data-emotion="css rnvdow">.css-rnvdow{background:transparent;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;}</style><header class="css-rnvdow edyo43n0"><style data-emotion="css js4wiy">.css-js4wiy{max-width:860px;padding:1rem 1.0875rem;font-size:1.2rem;}</style><div class="css-js4wiy edyo43n3"><p><style data-emotion="css nc1lvf">.css-nc1lvf{color:black;margin-left:15px;-webkit-text-decoration:none;text-decoration:none;display:inline-block;position:relative;margin-left:0;}.css-nc1lvf::after{content:"";position:absolute;width:100%;-webkit-transform:scaleX(0);-moz-transform:scaleX(0);-ms-transform:scaleX(0);transform:scaleX(0);height:2px;bottom:-4px;left:0;background-color:rgba(0, 0, 0, 0.8);transform-origin:bottom right;-webkit-transition:-webkit-transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);transition:transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);}.css-nc1lvf:hover{-webkit-text-decoration:none;text-decoration:none;color:black;}.css-nc1lvf:hover::after{-webkit-transform:scaleX(1);-moz-transform:scaleX(1);-ms-transform:scaleX(1);transform:scaleX(1);transform-origin:bottom left;}</style><a class="css-nc1lvf edyo43n1" href="/">Edward Kim</a><style data-emotion="css zw8aqz">.css-zw8aqz{color:black;margin-left:15px;-webkit-text-decoration:none;text-decoration:none;display:inline-block;position:relative;}.css-zw8aqz::after{content:"";position:absolute;width:100%;-webkit-transform:scaleX(0);-moz-transform:scaleX(0);-ms-transform:scaleX(0);transform:scaleX(0);height:2px;bottom:-4px;left:0;background-color:rgba(0, 0, 0, 0.8);transform-origin:bottom right;-webkit-transition:-webkit-transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);transition:transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);}.css-zw8aqz:hover{-webkit-text-decoration:none;text-decoration:none;color:black;}.css-zw8aqz:hover::after{-webkit-transform:scaleX(1);-moz-transform:scaleX(1);-ms-transform:scaleX(1);transform:scaleX(1);transform-origin:bottom left;}</style><a class="css-zw8aqz edyo43n2" href="/blog">Blog</a><a href="https://github.com/bepyan" class="css-zw8aqz edyo43n2">GitHub</a></p></div></header><style data-emotion="css 1maa4id">.css-1maa4id{margin:0 auto;max-width:860px;padding:0 1.0875rem 1rem;padding-top:0;}</style><div class="css-1maa4id e1g6m4zg1"><main><style data-emotion="css thxjb7">.css-thxjb7{margin:0 auto;max-width:860px;padding:1.45rem 1.0875rem;}</style><div class="css-thxjb7 e19fa7db3"><style data-emotion="css 1er6zyv">.css-1er6zyv{display:inline;font-weight:800;}</style><h1 class="css-1er6zyv e19fa7db2">( 면접대비 ) Operating System 총정리</h1><style data-emotion="css gtmkc9">.css-gtmkc9{margin-top:1rem;font-size:1rem;font-weight:400;color:#606060;}</style><h3 class="css-gtmkc9 e19fa7db1">2021.10.20<!-- --> · <!-- -->CS, 면접<!-- --> ·<!-- --> <!-- -->15 min read</h3><style data-emotion="css 1d044l2">.css-1d044l2{border-radius:8px;overflow:hidden;background-color:#f8f9fa;margin-bottom:2rem;}.css-1d044l2 h3{cursor:pointer;padding:2rem;margin-bottom:0px;-webkit-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;}.css-1d044l2 h3:hover{background-color:#f4f4f4;}.css-1d044l2 div{padding:0.5rem 2rem 2rem 2rem;position:relative;-webkit-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;}.css-1d044l2 li{list-style:none;}.css-1d044l2 a{-webkit-text-decoration:none;text-decoration:none;color:#6f6f6f;}.css-1d044l2 a:hover{color:#4c4c4c;}</style><div class="css-1d044l2 e16iq28k0"><h3>Series. <!-- -->면접 대비하기</h3><div><li><a href="/blog/cs/1">1<!-- -->. <!-- -->( 면접대비 ) 객체지향과 함수형 프로그래밍</a></li><li><a href="/blog/cs/js">2<!-- -->. <!-- -->( 면접대비 ) Javascript</a></li><li><a href="/blog/cs/2">3<!-- -->. <!-- -->( 면접대비 ) 개발상식</a></li><li><a aria-current="page" class="" href="/blog/cs/os">4<!-- -->. <!-- -->( 면접대비 ) Operating System 총정리</a></li><li><a href="/blog/cs/5">5<!-- -->. <!-- -->( 면접대비 ) 자아설찰, 경험</a></li><a>다른 Series 보기</a></div></div><style data-emotion="css 1arf9aw">.css-1arf9aw a{-webkit-text-decoration:none;text-decoration:none;position:relative;color:grey;background-image:linear-gradient(rgba(222, 233, 255), rgba(222, 233, 255));background-repeat:no-repeat;-webkit-background-size:100% 0.2em;background-size:100% 0.2em;-webkit-background-position:0 88%;background-position:0 88%;-webkit-transition:background-size 0.25s ease-in;transition:background-size 0.25s ease-in;}.css-1arf9aw a:hover{-webkit-background-size:100% 88%;background-size:100% 88%;}.css-1arf9aw a>code:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1arf9aw .anchor-header{left:4px;background-image:none;}</style><div class="css-1arf9aw e19fa7db0"><br>
+<br>
+<br>
+<h2 id="-운영체제" style="position:relative;">🗡 운영체제<a href="#-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C" aria-label=" 운영체제 permalink" class="anchor-header after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<p>시스템의 자원과 동작을 관리하는 소프트웨어</p>
+<div style="text-align:center">
+  <img src="https://media2.giphy.com/media/1HQ0xMcxsSECY/giphy.gif?cid=ecf05e4760h9xh9j45krr0rqaqy32nvj5m4khcweolxlw69d&rid=giphy.gif&ct=g" height="300">
+  <p>내 마음속의 운영체제</p>
+</div>
+<br>
+<br>
+<br>
+<h2 id="-프로세스-관리" style="position:relative;">🗡 프로세스 관리<a href="#-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%EA%B4%80%EB%A6%AC" aria-label=" 프로세스 관리 permalink" class="anchor-header after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<br>
+<br>
+<h3 id="프로그램--프로세스--스레드" style="position:relative;">프로그램 · 프로세스 · 스레드<a href="#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8--%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4--%EC%8A%A4%EB%A0%88%EB%93%9C" aria-label="프로그램  프로세스  스레드 permalink" class="anchor-header after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h3>
+<br>
+<p><strong>프로그램</strong></p>
+<ul>
+<li>어떤 작업을 실행하는 파일이다.
+<ul>
+<li>하드 디스크 등에 저장되어 있는 실행코드</li>
+</ul>
+</li>
+</ul>
+<br>
+<p><strong>프로세스</strong></p>
+<ul>
+<li>OS의 자원을 할당받아 실행되는 <strong>작업단위</strong>이다.
+<ul>
+<li>프로그램의 객체 인스턴스, 상태가 메모리에 적재된다.</li>
+</ul>
+</li>
+<li><strong>PCB</strong> Process Control Block
+<ul>
+<li>프로세스에 대한 중요 정보(PID, 상태, 스케줄링 정보, 메모리 정보 ...)를 저장한다.</li>
+<li>Context Switching 할 때에 작업의 진행 상황을 모두 저장.</li>
+</ul>
+</li>
+<li>프로세스의 주소공간
+<ul>
+<li>code: 컴파일된 코드</li>
+<li>data: 전역변수, 정적변수</li>
+<li>heap: 동적으로 할당되는 메모리</li>
+<li>stack: 지역변수, 매개변수</li>
+</ul>
+</li>
+</ul>
+<div style="text-align:center">
+  <img src="https://gmlwjd9405.github.io/images/os-process-and-thread/process.png" width="49%">
+  <img src="https://gmlwjd9405.github.io/images/os-process-and-thread/thread.png" width="49%">
+</div>
+<br>
+<p><strong>스레드</strong></p>
+<ul>
+<li>프로세스가 할당 받은 자원을 이용하는 <strong>실행단위</strong>이다.</li>
+<li>프로세스의 code, data, heap영역을 공유한다.</li>
+</ul>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<h3 id="멀티-프로세스--멀티-스레드" style="position:relative;">멀티 프로세스 · 멀티 스레드<a href="#%EB%A9%80%ED%8B%B0-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4--%EB%A9%80%ED%8B%B0-%EC%8A%A4%EB%A0%88%EB%93%9C" aria-label="멀티 프로세스  멀티 스레드 permalink" class="anchor-header after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h3>
+<ul>
+<li>효율성
+<ul>
+<li>스레드는 code, data, heap를 공유하기에 시스템 자원을 적게 소모한다.</li>
+<li>프로세스 Context Switching으로 인한 오버헤드도 줄일 수 있다.</li>
+<li>프로세스간 IPC 통신을 할 수 있지만 복잡하고 비용이 크다.</li>
+</ul>
+</li>
+<li>안정성
+<ul>
+<li>프로세스는 독립적이기에 하나에 문제가 발생해도 다른 프로세스는 정상적으로 실행이 된다.</li>
+<li>반면 스레드는 다든 스레드에게 영향을 주기에 이런 동기화 문제를 대비해야 한다.</li>
+</ul>
+</li>
+</ul>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<h3 id="스케줄링" style="position:relative;">스케줄링<a href="#%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81" aria-label="스케줄링 permalink" class="anchor-header after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h3>
+<p><img src="https://user-images.githubusercontent.com/13609011/91695344-f2dfae80-eba8-11ea-9a9b-702192316170.jpeg" alt="스케줄링"></p>
+<ul>
+<li>Ready Queue는 CPU가 작업하기 전 대기하는 메모리 영역이다.</li>
+<li>Waiting에서는 이 프로세스에 대한 I/O 요청과 같은 이벤트에 대한 피드벡을 기다린다.</li>
+</ul>
+<br>
+<ul>
+<li>장기 스케줄러 ( Job ) New -> Ready</li>
+<li>단기 스케줄러 ( CPU ) Ready -> Running</li>
+<li>중기 스케줄러 ( Swapper ) Ready -> Suspended <del> 쫒겨나는거다. </del></li>
+</ul>
+<br>
+<br>
+<p><strong>CPU 스케줄링</strong></p>
+<ul>
+<li>선점 / 비선점
+<ul>
+<li>비선점형은 CPU에서 작업이 끝나면 Ready Queue 제일 앞에 있는 프로세스를 할당한다.</li>
+<li><del>이 CPU는 이제 제껍니다.</del> 최신 운영체제는 거의 선점형을 사용한다.</li>
+</ul>
+</li>
+<li>Starvation
+<ul>
+<li>작업순위에서 차별을 받아 계속 CPU에 할당받지 못하는 문제이다.</li>
+</ul>
+</li>
+</ul>
+<br>
+<ul>
+<li>FCFS ( First Come First Served )
+<ul>
+<li>비선점</li>
+<li>먼저 온 프로세스를 선택한다.</li>
+<li>실행시간이 짧은 프로세스가 긴 프로세스의 작업을 계속 기다리게 되면서 CPU 사용률이 낮아진다.</li>
+</ul>
+</li>
+<li>SJF ( Shortest Job First )
+<ul>
+<li>비선점</li>
+<li>작업소요시간이 가장 짧은 프로세스를 선택한다.</li>
+<li>SRTF ( Shortest Remaining Time First )
+<ul>
+<li>선점형. Ready Queue에 더 짧은 프로세스가 있으면 바로 선점한다.</li>
+</ul>
+</li>
+<li>장점. 최소 평균 대기 시간을 보장할 수 있다.</li>
+<li>단점. 작업시간을 알기 어렵고 Starvation 문제가 발생할 수 있다.</li>
+</ul>
+</li>
+<li>PS ( Priority Scheduling )
+<ul>
+<li>선점 / 비선점 모두 가능하다.</li>
+<li>Aging
+<ul>
+<li>Ready Queue에 있는 시간이 길어지면 우선순위를 높여주면서 Starvation을 해결한다.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>RR ( Round Robin )</strong>
+<ul>
+<li>선점</li>
+<li>각 프로세스는 동일한 크기의 할당 시간(time quantum)을 갖는다. 할당시간이 지나면 Ready Queue 제일 뒤에 적재한다.</li>
+<li>할당시간이 길면 FCFS과 같아지고 짧으면 잦은 Context Swtich로 오버헤드가 발생한다.</li>
+</ul>
+</li>
+</ul>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<h3 id="프로세스-동기화" style="position:relative;">프로세스 동기화<a href="#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%EB%8F%99%EA%B8%B0%ED%99%94" aria-label="프로세스 동기화 permalink" class="anchor-header after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h3>
+<p>멀티프로세싱, 멀티스레드 환경에서 <strong>실행 순서 규칙</strong>을 통해 <strong>공유자원의 일관성</strong>을 보장하는 것.</p>
+<p>어떠한 문제를 방지하기 위함을까?</p>
+<br>
+<br>
+<p><strong>경쟁 상태 ( Race Condition )</strong></p>
+<ul>
+<li>
+<p>여러 프로세스가 공유 자원에 대해 동시에 접근할 때, 실행순서에 따라 결과가 달라지는 상태이다. (동시성 문제)</p>
+</li>
+<li>
+<p><strong>임계영역 ( Critical Section )</strong></p>
+<ul>
+<li>자원을 동시에 접근하면 안되는 코드 영역이다.</li>
+</ul>
+</li>
+<li>
+<p>상호배제를 통해 이를 해결할 수 있다. ( 자원은 한번에 한 프로세스만이 사용 )</p>
+<ul>
+<li>
+<p><strong>뮤텍스 ( Mutex )</strong></p>
+<ul>
+<li>Locking 메커니즘
+<ul>
+<li>오직 1개의 Lock만이 있다.</li>
+<li>프로세스가 Lock을 설정하고 임계영역에 진입하며 작업을 종료하면 Lock을 반환한다.</li>
+<li>Lock을 설정한 프로세스만이 Lock을 해제할 수 있다. (Semaphore와의 차이점)</li>
+<li>Lock을 갖기 전까지 busy waiting(무한루프)하지 않고 sleep상태로 들어 간다. (Spin Lock 과의 차이점)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>세마포어 ( Semaphore )</strong></p>
+<ul>
+<li>
+<p>Signaling 메커니즘</p>
+<ul>
+<li>뮤텍스와 달리 Lock을 설정하지않은 프로세스도 Signal를 보내서 락을 해제할 수 있다.</li>
+<li>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>카운팅 세마포어</td>
+<td>여러개의 Lock를 갖을 수 있다.</td>
+</tr>
+<tr>
+<td>이진 세마포어</td>
+<td>1개의 Lock을 갖고 있어 Mutex처럼 사용할 수 있다</td>
+</tr>
+<tr>
+<td>강성 &#x26; 약성 세마포어</td>
+<td>큐에서 프로세스를 깨우는 순서(FIFO)가 있는지.</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</li>
+<li>
+<details>
+<summary>&nbsp; 코드로 이해</summary>
+<p>
+<div class="gatsby-highlight" data-language="javascript"><pre style="counter-reset: linenumber NaN" class="language-javascript line-numbers"><code class="language-javascript">struct semaphore <span class="token punctuation">{</span>
+  int count<span class="token punctuation">;</span>
+  queueType queue<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">void</span> <span class="token function">semWait</span><span class="token punctuation">(</span><span class="token parameter">semaphore s</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  s<span class="token punctuation">.</span>count<span class="token operator">--</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>s<span class="token punctuation">.</span>count <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token comment">// enqueue 프로세스</span>
+      <span class="token comment">// block 프로세스</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">void</span> <span class="token function">semSignal</span><span class="token punctuation">(</span><span class="token parameter">semaphore s</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  s<span class="token punctuation">.</span>count<span class="token operator">++</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>s<span class="token punctuation">.</span>count <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token comment">// dequeue 프로세스</span>
+      <span class="token comment">//</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+</li>
+</ul>
+</p>
+</details>
+</li>
+</ul>
+</li>
+</ul>
+<br>
+<br>
+<p><strong>데드락 ( Deadlock )</strong></p>
+<div style="text-align:center">
+  <img src="https://lh3.googleusercontent.com/proxy/bL2pYcwcm4Jmo-B3IhRkUFpZg5KbSqGJXOjnAAn03N07QqJ4eHJGBtvvuQ6bPDxekdGpRRmVfS96_N0" width="49%">
+  <p>먼저 놔라..</p>
+</div>
+<ul>
+<li>서로가 서로의 자원을 받기를 무기한으로 대기하는 상황이다.</li>
+<li><strong>4가지 발생조건</strong> ( 이중 하나라도 성립되지 않으면 문제를 해결할 수 있다. )
+<ul>
+<li>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>상호 배제</strong> ( <strong>Mut</strong>ual <strong>Ex</strong>clusion )</td>
+<td>자원은 한번에 한 프로세스만이 사용한다.</td>
+</tr>
+<tr>
+<td>점유 대기</td>
+<td>자원을 점유하면서 추가로 점유해야하는 자원을 대기한다.</td>
+</tr>
+<tr>
+<td>비선점</td>
+<td>할당된 자원을 도중에 강제로 빼앗을 수 없다.</td>
+</tr>
+<tr>
+<td>순환 대기</td>
+<td>프로세스의 집합에서 순환 형태로 자원을 대기한다.</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</li>
+<li><strong>해결법</strong>
+<ul>
+<li>예방
+<ul>
+<li>4가지 조건 중 하나를 깨뜨린다.</li>
+<li>비용이 많이 발생하여 시스템의 성능을 떨어질 수 있다.</li>
+</ul>
+</li>
+<li>회피
+<ul>
+<li>서로가 대기하지 않는 안전상태 ( safe state )를 보장한다.</li>
+<li>은행원 알고리즘.
+<ul>
+<li>은행에서 오늘의 모든 출금을 충족시킬 수 있는 현금을 준비하는 것.</li>
+<li>자원 할당량을 사전에 파악하여</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>탐지 및 회복
+<ul>
+<li>데드락이 발생했는지 탐색을 하고 순환대기 상태를 깨뜨린다.
+<ul>
+<li>자원 할당 그래프를 통해 탐색.</li>
+<li>프로세스를 하나씩 중단 or 전체 중단.</li>
+<li>자원 선점.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<h2 id="-메모리-관리" style="position:relative;">🗡 메모리 관리<a href="#-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B4%80%EB%A6%AC" aria-label=" 메모리 관리 permalink" class="anchor-header after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<br>
+<br>
+<h3 id="페이징--세그멘테이션" style="position:relative;">페이징 · 세그멘테이션<a href="#%ED%8E%98%EC%9D%B4%EC%A7%95--%EC%84%B8%EA%B7%B8%EB%A9%98%ED%85%8C%EC%9D%B4%EC%85%98" aria-label="페이징  세그멘테이션 permalink" class="anchor-header after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h3>
+<ul>
+<li>
+<p>프로세스는 각각 독립적인 메모리 공간을 갖는다. (서로 서로의 메모리 공간을 접근할 수 없다)</p>
+</li>
+<li>
+<p><strong>Swapping</strong></p>
+<ul>
+<li>round-robin와 같이 다중 프로그래밍 환경에서 CPU 할당 시간이 끝난 프로세스의 메모리를 교체해주는 기법</li>
+<li>간단히 말하면 [ 보조 기억장치 &#x3C;-> 메모리 ]</li>
+<li>메모리 공간이 부족할 때 진행된다.</li>
+</ul>
+</li>
+<li>
+<p><strong>Fragmentation 단편화</strong></p>
+<ul>
+<li>메모리에 프로세스들을 할당하면서 틈새에 사용할 수 없는 빈공간이 생기는 것.</li>
+<li><code class="language-text">외부 단편화</code> 프로세스 사이사이의 빈 공간</li>
+<li><code class="language-text">내부 단편화</code> 프로세스가 할당 받은 메모리 중 남은 공간</li>
+</ul>
+</li>
+<li>
+<p>압축을 통해 빈공간을 끌어모아 자유공간을 확보할 수 있지만 작업효율이 좋지않다.</p>
+</li>
+<li>
+<p>빈 공간을 없애기 위해서 <code class="language-text">불연속 메모리 할당</code> 기법을 사용한다.</p>
+</li>
+</ul>
+<br>
+<br>
+<p><strong>페이징 ( Paging )</strong></p>
+<ul>
+<li>메모리를 물리적으로 Frame 이라는 고정 크기로 분리했다면, 논리적으로는 Page라는 <strong>고정 크기</strong>의 블록으로 분리한다.</li>
+<li>Page와 Frame이 매핑되기에 Frame을 순서상관없이 메모리에 저장할 수 있다.</li>
+<li>내부 단편화 문제의 비중이 늘어나게 된다.</li>
+</ul>
+<br>
+<br>
+<p><strong>세그멘테이션 (Segmentation)</strong></p>
+<ul>
+<li>고정 크기가 아닌 <strong>서로 다른 크기</strong>의 segmentation으로 분리한다.</li>
+<li>테이블에 segment의 시작주소와 길이를 저장한다.</li>
+<li>외부 단편화 문제의 비중이 늘어나게 된다.</li>
+</ul>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<h3 id="페이지-교체" style="position:relative;">페이지 교체<a href="#%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B5%90%EC%B2%B4" aria-label="페이지 교체 permalink" class="anchor-header after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h3>
+<ul>
+<li><code class="language-text">페이지 부재</code> 동작에 필요한 페이지가 물리 메모리 공간에 없으면 가져와야 한다.</li>
+<li>앞으로 자주 사용되는 페이지를 메모리에 남겨 두는 것이 가장 이상적이다.</li>
+</ul>
+<br>
+<br>
+<ul>
+<li>
+<p><strong>FIFO ( Frist In Frist Out )</strong></p>
+<ul>
+<li>메모리에 가장 오래된 페이지 교체</li>
+</ul>
+</li>
+<li>
+<p><strong>OPT ( Optimal Page Replacement )</strong></p>
+<ul>
+<li>가장 오랫동안 사용되지 않을 페이지 찾아 교체</li>
+<li>하지만 찾는 것이 사실상 불가능</li>
+</ul>
+</li>
+<li>
+<p><strong>LRU ( Least Recfently Used )</strong></p>
+<ul>
+<li>최적 알고리즘</li>
+<li>가장 오래 사용되지 않는 페이지를 교체</li>
+</ul>
+</li>
+<li>
+<p><strong>LFU (Least Frequently Used)</strong></p>
+<ul>
+<li>참조 횟수가 가장 적은 페이지를 교체</li>
+</ul>
+</li>
+<li>
+<p><strong>MFU (Most Frequently Used)</strong></p>
+<ul>
+<li>참조 횟수가 가장 많은 페이지 교체</li>
+</ul>
+</li>
+</ul>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<h3 id="가상메모리" style="position:relative;">가상메모리<a href="#%EA%B0%80%EC%83%81%EB%A9%94%EB%AA%A8%EB%A6%AC" aria-label="가상메모리 permalink" class="anchor-header after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h3>
+<ul>
+<li>프로세스의 일부분만 메모리에 적재하는 기법.
+<ul>
+<li>프로그램이 물리 메모리 크기에 제약을 받지 않는다.</li>
+<li>더 많은 프로그램을 동시 실행할 수 있게 되어 CPU 이용률과 처리율은 높아진다.</li>
+<li>swap에 필요한 입출력이 줄어들기 때문에 프로그램들이 빠르게 실행된다.</li>
+</ul>
+</li>
+<li><strong>가상 주소 공간</strong>
+<ul>
+<li>물리 메모리에 자장하지 않고 다른 저장공간을 논리적으로 구분되는 곳</li>
+</ul>
+</li>
+<li>요구 페이징 전략
+<ul>
+<li>초기에 프로세스가 필요한 것들만 물리 메모리에 저장</li>
+<li>한 번도 접근되지 않은 페이지는 물리 메모리에 적재되지 않는다.</li>
+</ul>
+</li>
+</ul>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<h3 id="캐시" style="position:relative;">캐시<a href="#%EC%BA%90%EC%8B%9C" aria-label="캐시 permalink" class="anchor-header after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h3>
+<ul>
+<li>캐시 메모리는 속도가 빠른 장치와 느린 장치간의 속도차에 따른 병목 현상을 줄이기 위한 범용 메모리이다.</li>
+<li>캐시의 <strong>지역성 원리</strong>
+<ul>
+<li><code class="language-text">적중율(Hit rate)</code>을 극대화하기 위함이다.
+<ul>
+<li>CPU가 참조할 데이터가 캐시에 있으면 적중.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>캐싱 라인
+<ul>
+<li>데이터를 저장할 때 특정 자료구조를 사용하여 묶음으로 저장한다.</li>
+<li>DB의 인덱싱과 비슷한 개념</li>
+</ul>
+</li>
+</ul>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<h2 id="-번외" style="position:relative;">🗡 번외<a href="#-%EB%B2%88%EC%99%B8" aria-label=" 번외 permalink" class="anchor-header after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<p><strong>Blocking / Non-blocking</strong></p>
+<ul>
+<li><strong>호출된 함수</strong>가 자신의 일을 마칠 때까지 제어권을 가지고 있는지?</li>
+<li><code class="language-text">기다린다</code> = 대기 큐에 머문다.</li>
+</ul>
+<p><strong>Synchronous / Asynchronous</strong></p>
+<ul>
+<li><strong>호출된 함수</strong>의 수행 결과 및 종료를 호출된 함수 혼자 직접 신경 쓰고 처리하는지 (callback)</li>
+<li>system call의 완료를 기다리는지 ??</li>
+<li><code class="language-text">callback</code>이란?
+<ul>
+<li>다른 함수의 인자로써 이용되는 함수</li>
+<li>어떤 이벤트에 의해 호출되어지는 함수</li>
+<li>called at the back</li>
+</ul>
+</li>
+</ul>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<h2 id="-참고" style="position:relative;">🗡 참고<a href="#-%EC%B0%B8%EA%B3%A0" aria-label=" 참고 permalink" class="anchor-header after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
+<ul>
+<li><a href="https://gyoogle.dev/blog/computer-science/operating-system/Process%20vs%20Thread.html">https://gyoogle.dev/blog/computer-science/operating-system/Process%20vs%20Thread.html</a></li>
+<li><a href="https://gmlwjd9405.github.io/2018/09/14/process-vs-thread.html">https://gmlwjd9405.github.io/2018/09/14/process-vs-thread.html</a></li>
+<li><a href="https://kukuta.tistory.com/281">데드락</a></li>
+</ul></div><style data-emotion="css a5fci7">.css-a5fci7{position:fixed;position:-webkit-sticky;top:250px;right:calc(((100% - 960px) / 2) - 220px);max-width:220px;max-height:90%;overflow:hidden;}.css-a5fci7 h5{text-indent:10px;margin-bottom:8px;}.css-a5fci7 p,.css-a5fci7 ul,.css-a5fci7 li{list-style:none;margin-top:0;margin-bottom:0;line-height:30px;text-indent:10px;font-size:13px;}.css-a5fci7 a{-webkit-text-decoration:none;text-decoration:none;text-overflow:ellipsis;white-space:nowrap;color:grey;}</style><div class="css-a5fci7 e18by7i00"><style data-emotion="css 5mbhvq">.css-5mbhvq li.active>a,.css-5mbhvq a:hover,.css-5mbhvq a[href*=""]{color:black;}</style><div class="css-5mbhvq"><ul>
+<li>
+<p><a href="#-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C">🗡 운영체제</a></p>
+</li>
+<li>
+<p><a href="#-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%EA%B4%80%EB%A6%AC">🗡 프로세스 관리</a></p>
+<ul>
+<li><a href="#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8--%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4--%EC%8A%A4%EB%A0%88%EB%93%9C">프로그램 · 프로세스 · 스레드</a></li>
+<li><a href="#%EB%A9%80%ED%8B%B0-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4--%EB%A9%80%ED%8B%B0-%EC%8A%A4%EB%A0%88%EB%93%9C">멀티 프로세스 · 멀티 스레드</a></li>
+<li><a href="#%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81">스케줄링</a></li>
+<li><a href="#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%EB%8F%99%EA%B8%B0%ED%99%94">프로세스 동기화</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B4%80%EB%A6%AC">🗡 메모리 관리</a></p>
+<ul>
+<li><a href="#%ED%8E%98%EC%9D%B4%EC%A7%95--%EC%84%B8%EA%B7%B8%EB%A9%98%ED%85%8C%EC%9D%B4%EC%85%98">페이징 · 세그멘테이션</a></li>
+<li><a href="#%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B5%90%EC%B2%B4">페이지 교체</a></li>
+<li><a href="#%EA%B0%80%EC%83%81%EB%A9%94%EB%AA%A8%EB%A6%AC">가상메모리</a></li>
+<li><a href="#%EC%BA%90%EC%8B%9C">캐시</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#-%EB%B2%88%EC%99%B8">🗡 번외</a></p>
+</li>
+<li>
+<p><a href="#-%EC%B0%B8%EA%B3%A0">🗡 참고</a></p>
+</li>
+</ul></div></div></div></main><style data-emotion="css 1q4fjh3">.css-1q4fjh3{margin:0 1.0875rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;-webkit-justify-content:flex-end;justify-content:flex-end;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}.css-1q4fjh3>:not(:first-of-type){margin-left:4px;}.css-1q4fjh3>p{font-size:14px;}</style><footer class="css-1q4fjh3 e1g6m4zg0"><p>©</p><p>bepyan</p></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-27VK5FH7WW"></script><script>
+    window.GATSBY_GTAG_PLUGIN_GA_TRACKING_ID = (
+      'G-27VK5FH7WW'
+    );
+    window.GATSBY_GTAG_PLUGIN_ANONYMIZE = true;
+
+    var options = {
+      send_page_view: false
+    };
+    if (true) {
+      options.anonymize_ip = true;
+    }
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', 'G-27VK5FH7WW', options);
+  </script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blog/cs/os";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-0ee38670ea98a3bc3183.js"],"app":["/app-d47762784037f990d1ce.js"],"component---src-pages-404-js":["/component---src-pages-404-js-2ed31d3d9e10aa5a784d.js"],"component---src-pages-blog-js":["/component---src-pages-blog-js-436add4a13e316aa901d.js"],"component---src-pages-index-js":["/component---src-pages-index-js-20b6ee341719341537de.js"],"component---src-pages-tags-js":["/component---src-pages-tags-js-e8b5cb850327deb4b001.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-f3c6282fa220f066ca7d.js"],"component---src-templates-tags-js":["/component---src-templates-tags-js-4ee14bb05636b23109dc.js"]};/*]]>*/</script><script src="/polyfill-0ee38670ea98a3bc3183.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-f3c6282fa220f066ca7d.js" async=""></script><script src="/3427b2c1161a6f09823c5f9386986cbf00268c94-ec590d9fbb637d097c59.js" async=""></script><script src="/commons-f8da271c73aa67b1ddf1.js" async=""></script><script src="/app-d47762784037f990d1ce.js" async=""></script><script src="/framework-30aab022bb8682845c56.js" async=""></script><script src="/webpack-runtime-0bafa2814e214cedc4de.js" async=""></script></body></html>

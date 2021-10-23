@@ -563,6 +563,7 @@ abbr[title] {
 thead {
   text-align: left;
 }
+
 td,
 th {
   text-align: left;
@@ -635,11 +636,12 @@ span::selection,
 em::selection,
 img::selection,
 summary::selection,
+td::selection,
+th::selection,
+li::selection,
+del::selection,
 a::selection {
   background: #dee9ff;
-}
-li::selection {
-  background: #dee9ff90;
 }
 code::selection,
 code .token::selection {
@@ -662,6 +664,10 @@ detilas {
 }
 details > summary::before {
   content: "+";
+  font-family: monospace;
+}
+details[open] > summary::before {
+  content: "-";
   font-family: monospace;
 }
 

@@ -30,6 +30,24 @@ tags: ["CS", "면접"]
 
 쇼핑몰 사이트 구현<del>하는데 있어 사용자를 '고객'이라는 이름으로 객체를 정의하여 사이트에 필요한 아이디, 전화번호, 주소 등 정보와 로그인하기, 카트에 담기 등 기능을 객체에 정의하여 </del>
 
+**( SOLID )**
+
+- **S**RP
+  - 단일 책임 원칙 (Single responsibility principle)
+  - 한 클래스는 하나의 책임만 가져야 한다.
+- **O**CP
+  - 개방-폐쇄 원칙 (Open/closed principle)
+  - 소프트웨어 요소는 확장에는 열려 있으나 변경에는 닫혀 있어야 한다.
+- **L**SP
+  - 리스코프 치환 원칙 (Liskov substitution principle)
+  - "프로그램의 객체는 프로그램의 정확성을 깨뜨리지 않으면서 하위 타입의 인스턴스로 바꿀 수 있어야 한다." 계약에 의한 설계를 참고하라.
+- **I**SP
+  - 인터페이스 분리 원칙 (Interface segregation principle)
+  - "특정 클라이언트를 위한 인터페이스 여러 개가 범용 인터페이스 하나보다 낫다."
+- **D**IP
+  - 의존관계 역전 원칙 (Dependency inversion principle)
+  - 프로그래머는 "추상화에 의존해야지, 구체화에 의존하면 안된다." 의존성 주입은 이 원칙을 따르는 방법 중 하나다.
+
 **( 꼬리질문 )**
 
 <details>
@@ -94,6 +112,17 @@ tags: ["CS", "면접"]
 
 <br>
 
+<details>
+<summary>&nbsp; 개방 패쇄 원칙에 대해서 설명해주세요.</summary>
+<p>
+
+- 개체는 확장에는 열려 있어야 하고, 변경에는 닫혀있어야 한다.
+
+</p>
+</details>
+
+<br>
+
 <br>
 <br>
 
@@ -124,6 +153,45 @@ tags: ["CS", "면접"]
 - **일급객체** : 다른 객체들에 일반적으로 적용 가능한 연산을 모두 지원하는 객체.
 - 사용자와 상호작용을 하려면 상태변화는 피할 수 없는 문제이다. 다만 함수형 프로그래밍은 그 변하는 상태를 최소화하겠다는 것이다!
 - 모듈화 수준을 높인다는 것은 코드가 조립, 재구성이 쉽다는 것이다.
+
+<br>
+
+**( map )**
+
+- array를 변환하면서 작업 의도를 더 명확하게 표현
+- 어떻게가 아닌 **무업을 달성하려는지**를 더 잘 표현할 수 있게 된다.
+- flatMap. map을 수행 후 새로운 배열로 평탄화 한다.
+  ```js
+  [1, 2, 3].flatMap((v) => [v, v]); // [1, 1, 2, 2, 3, 3]
+  ```
+
+<br>
+
+**( Functor )**
+
+- map 함수를 지원하는 컨테이너 타입 ( map을 구현하는 타입 )
+- 어떤 값을 가지고 있는 구조와 구조를 유지한채 그 값에다 함수를 적용할 수 있는 인터페이스의 조합.
+- 컨테이너에서 값을 빼내어 특정 함수를 사용하여 타입과 값을 변경하고 다시 컨테이너에 넣는 것.
+
+  ```js
+  const arr = [1, 2, 3];
+
+  const doubledArr = [];
+  for (const v in arr) {
+    doubleArr.push(v * 2);
+  }
+
+  console.log(doubledArr);
+  ```
+
+<br>
+
+**( Monad )**
+
+- Pure + Compose ( flatMap 함수를 구현하는 타입 )
+- 합성될 수 있는 연산
+
+<br>
 
 **( 꼬리질문 )**
 
@@ -180,3 +248,5 @@ tags: ["CS", "면접"]
 - https://futurecreator.github.io/2018/10/05/why-functional-programming/
 - https://codechaser.tistory.com/81
 - https://velog.io/@kyusung/%ED%95%A8%EC%88%98%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%9A%94%EC%95%BD
+- https://min-i0212.tistory.com/13
+- https://overcurried.com/3%EB%B6%84%20%EB%AA%A8%EB%82%98%EB%93%9C/

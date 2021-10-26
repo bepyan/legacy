@@ -62,10 +62,8 @@ tags: ["CS", "면접"]
 <p>
 
 - HyperText Transfer Protocol
-- HTML, 비연결, 무상태
+- 주로 HTML, 비연결, 무상태
 - 80, 443
-
-연결지향적.
 
 </p>
 </details>
@@ -77,6 +75,7 @@ tags: ["CS", "면접"]
 <p>
 
 - HTTP + Secure Sockey Layer
+- SSL 인증서를 통해
 
 </p>
 </details>
@@ -84,18 +83,7 @@ tags: ["CS", "면접"]
 <br>
 
 <details>
-<summary>&nbsp; HTTPS 암호화 방법</summary>
-<p>
-
-- TLS, 암호화 키
-
-</p>
-</details>
-
-<br>
-
-<details>
-<summary>&nbsp; 암</summary>
+<summary>&nbsp; HTTP에서 암호화를 해야 하는 이유.</summary>
 <p>
 
 - 데이터 유출
@@ -106,7 +94,7 @@ tags: ["CS", "면접"]
 <br>
 
 <details>
-<summary>&nbsp; HTTP 1.1 버전에 대해서 설명해주세요</summary>
+<summary>&nbsp; HTTP 1.1 버전에 대해서 설명해주세요.</summary>
 <p>
 
 - 최초 표준, 커넥션 재사용, 파이프라이닝
@@ -158,6 +146,18 @@ tags: ["CS", "면접"]
 
 <br>
 
+<details>
+<summary>&nbsp; HTTP 캐시에 대해서 설명해주세요.</summary>
+<p>
+
+- 웹성능을
+- Cache-Control 헤더, 리소스의 생명주기
+
+</p>
+</details>
+
+<br>
+
 <br>
 <br>
 
@@ -178,7 +178,8 @@ tags: ["CS", "면접"]
 <summary>&nbsp; TCP에 대해서 설명해주세요.</summary>
 <p>
 
-- 신뢰성 (흐름제어, 혼잡제어, 오류제어), 연결성
+- 신뢰성 (흐름제어, 혼잡제어, 오류제어, 연결성)
+- 바이트 스트림
 
 </p>
 </details>
@@ -186,22 +187,31 @@ tags: ["CS", "면접"]
 <br>
 
 <details>
-<summary>&nbsp; UDP에 대해서 설명해주세요</summary>
+<summary>&nbsp;흐름제어와 혼잡제어에 대해서 설명해주세요.</summary>
+<p>
+
+- 흐름제어
+  - 데이터 처리 속도를 제어 (수신자가 받을 수 있는 만큼의 데이터를 전송)
+  - 슬라이딩 윈도우
+
+<br>
+
+- 혼잡제어
+  - 네트워크에 유입되는 데이터량을 제어 (window size)
+  - AIMD, Slow Start
+    - 조금 조금씩 유입량을 늘리고 임계값에 도달되면 다시 처음으로
+
+</p>
+</details>
+
+<br>
+
+<details>
+<summary>&nbsp; UDP에 대해서 설명해주세요.</summary>
 <p>
 
 - 낮은 신뢰성, 단순하며 빠름
 - 체크섬
-
-</p>
-</details>
-
-<br>
-
-<details>
-<summary>&nbsp; 혼잡제어와 흐름제어의 차이</summary>
-<p>
-
-- 양
 
 </p>
 </details>
@@ -280,14 +290,41 @@ tags: ["CS", "면접"]
 <br>
 <br>
 
-### 🗡 프록시 서버
-
-- 클라이언트이자 서버인 노드
-- 실제 서버로부터 데이터를 가져와야 한다.
-- 서버부하, 캐시, 방화벽의 역할
+### 🗡 서버
 
 <details>
-<summary>&nbsp; 로드 밸런싱</summary>
+<summary>&nbsp; 프록시 서버에 대해서 설명해주세요.</summary>
+<p>
+
+- 클라이언트이자 서버인 노드
+  - 대리 통신
+- 서버부하, 캐시, 방화벽의 역할
+
+</p>
+</details>
+
+<br>
+
+<details>
+<summary>&nbsp; DNS에 대해서 설명해주세요.</summary>
+<p>
+
+- Domain Name Server
+- 도메인 이름을 IP주소로 변환해주는 서비스.
+
+<br>
+
+- 다양한 방식
+  - Round Robin,
+  - 로드 밸런싱
+
+</p>
+</details>
+
+<br>
+
+<details>
+<summary>&nbsp; 로드 밸런싱에 대해서 설명해주세요.</summary>
 <p>
 
 - 몰린 요청을 여러 서버로 배분
@@ -298,7 +335,7 @@ tags: ["CS", "면접"]
 <br>
 
 <details>
-<summary>&nbsp; NAT</summary>
+<summary>&nbsp; NAT에 대해서 설명해주세요.</summary>
 <p>
 
 - Network Address Translation / 네트워크 주소 변환
@@ -310,11 +347,58 @@ tags: ["CS", "면접"]
 <br>
 
 <details>
-<summary>&nbsp; DHCP</summary>
+<summary>&nbsp; DHCP에 대해서 설명해주세요.</summary>
 <p>
 
 - Dynamic Host Configuration Protocol
--
+
+</p>
+</details>
+
+<br>
+
+<details>
+<summary>&nbsp; CDN에 대해서 설명해주세요.</summary>
+<p>
+
+- Contents Delivery Network
+  Cache서버를 통해 Content를 빠르게 제공, 서버부하 부담,
+
+<br>
+
+- 컨텐츠 -> 디지털화될 수 있는 모든 데이터
+- Static Caching (대부분)
+  - 원본 서버가 미리 Content를 Cache 서버에 복사
+- Dynamic Caching
+  - 클라이언트의 요청 중 Content가 없으면 원본 서버로부터 다운로드
+
+</p>
+</details>
+
+<br>
+
+<br>
+<br>
+
+### 🗡 웹
+
+<details>
+<summary>&nbsp; 쿠키와 세션의 차이점에 대해서 설명해주세요.</summary>
+<p>
+
+- 통신 정보를 저장하는 위치.
+
+</p>
+</details>
+
+<br>
+
+<details>
+<summary>&nbsp; OAuth에 대해서 설명해주세요.</summary>
+<p>
+
+- 다른 웹사이트의 계정정보를 통해
+  - 회원가입 X
 
 </p>
 </details>

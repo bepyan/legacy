@@ -61,6 +61,21 @@ tags: ["CS", "면접"]
 <br>
 
 <details>
+<summary>&nbsp; 인덱스는 무조건 검색 속도를 향상시키나요?</summary>
+<p>
+
+- 아니다
+  - 해당 secondary 인덱스에 대한 질의가 전체 데이터의 20% 이상을 리턴하게 되는 경우, 인덱스를 활용하지 않는 full table scan이 더 효율적이다.
+  - Secondary index 탐색 → Primary index 탐색 → RID로 실제 데이터에 접근한다.
+- 쿼리옵티마이저
+  - 이런 경우를 판단하고, 인덱스를 사용한 검색을 수행할지 말지 결정
+
+</p>
+</details>
+
+<br>
+
+<details>
 <summary>&nbsp; 클러스터 인덱스와 결합 인덱스에 대해서 설명해주세요.</summary>
 <p>
 
@@ -100,11 +115,15 @@ tags: ["CS", "면접"]
 <br>
 
 <details>
-<summary>&nbsp; 트랜잭션</summary>
+<summary>&nbsp; RDBMS의 트랜잭션에 대해서 설명해주세요.</summary>
 <p>
 
 - DB의 상태를 변화시키는 일련의 연산
 - ACID
+  - 원자성
+  - 일관성 (Consistency)
+  - 독립성
+  - 지속성
 
 </p>
 </details>
@@ -115,7 +134,7 @@ tags: ["CS", "면접"]
 <summary>&nbsp; 정규형에 대해서 설명해주세요</summary>
 <p>
 
-- 데이터 중복성을 줄이기 위함
+- 테이블 규칙, 무결성, 중복성
 
 </p>
 </details>
@@ -144,7 +163,6 @@ tags: ["CS", "면접"]
 
 <br>
 
-
 <br>
 <br>
 
@@ -154,6 +172,7 @@ tags: ["CS", "면접"]
 <summary>&nbsp; NoSQL에 대해서 설명해주세요.</summary>
 <p>
 
+- Not only SQL
 - 비정형 데이터,
 
 </p>

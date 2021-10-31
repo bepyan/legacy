@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-tags-js",
     "path": "/tags/",
-    "result": {"data":{"site":{"siteMetadata":{"title":"Edward Kim"}},"tagsGroup":{"group":[{"tag":"CS","totalCount":8},{"tag":"Gatsby","totalCount":6},{"tag":"React","totalCount":2},{"tag":"Storybook","totalCount":2},{"tag":"Tutorial","totalCount":6},{"tag":"면접","totalCount":9},{"tag":"회고","totalCount":2}]}},"pageContext":{}},
-    "staticQueryHashes": ["210451802","3139552914","3649515864","63159454"]}
+    "result": {"data":{"site":{"siteMetadata":{"title":"Edward Kim"}},"tagsGroup":{"group":[{"tag":"CS","totalCount":8},{"tag":"Gatsby","totalCount":6},{"tag":"React","totalCount":4},{"tag":"Storybook","totalCount":2},{"tag":"Tutorial","totalCount":6},{"tag":"Typescript","totalCount":2},{"tag":"면접","totalCount":9},{"tag":"회고","totalCount":2}]}},"pageContext":{}},
+    "staticQueryHashes": ["210451802","3649515864","63159454"]}

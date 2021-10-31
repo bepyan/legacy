@@ -2,4 +2,4 @@
     "componentChunkName": "component---src-templates-tags-js",
     "path": "/tags/회고/",
     "result": {"data":{"allMarkdownRemark":{"totalCount":2,"edges":[{"node":{"frontmatter":{"title":"( 프로젝트 ) 걸어서 동네 속으로","path":"/blog/retrospective/걸어서-동네-속으로"}}},{"node":{"frontmatter":{"title":"2021 회고","path":"/blog/retrospective/2021"}}}]}},"pageContext":{"tag":"회고"}},
-    "staticQueryHashes": ["210451802","3139552914","3649515864","63159454"]}
+    "staticQueryHashes": ["210451802","3649515864","63159454"]}

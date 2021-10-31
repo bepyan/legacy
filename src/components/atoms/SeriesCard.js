@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Link, graphql, useStaticQuery } from "gatsby";
 import styled from "@emotion/styled";
+import { css } from "@emotion/react";
 
-const SeriesCard = ({ series }) => {
+const SeriesCard = ({ series, currentPath }) => {
   const list = useStaticQuery(graphql`
     query {
       allMarkdownRemark(
@@ -38,14 +39,14 @@ const SeriesCard = ({ series }) => {
       {!isFold && (
         <div>
           {list.map(({ path, title }, i) => (
-            <li>
-              <Link key={path} to={path}>
+            <li key={path} css={[currentPath === path && currentLink]}>
+              <Link to={path}>
                 {i + 1}. {title}
               </Link>
             </li>
           ))}
 
-          <Link>다른 Series 보기</Link>
+          <Link to={`/series`}>다른 Series 보기</Link>
         </div>
       )}
     </Card>
@@ -58,7 +59,7 @@ const Card = styled.div`
   border-radius: 8px;
   overflow: hidden;
   background-color: #f8f9fa;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 
   h3 {
     cursor: pointer;
@@ -84,7 +85,14 @@ const Card = styled.div`
     text-decoration: none;
     color: #6f6f6f;
     &:hover {
+      text-decoration: none;
       color: #4c4c4c;
     }
+  }
+`;
+
+const currentLink = css`
+  a {
+    font-weight: bold;
   }
 `;

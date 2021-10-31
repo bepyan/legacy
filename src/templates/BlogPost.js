@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import styled from "@emotion/styled";
 import {
   Layout,
@@ -22,11 +22,21 @@ const BlogPost = ({ data }) => {
       <Content>
         <MarkedHeader>{frontmatter.title}</MarkedHeader>
         <HeaderDate>
-          {frontmatter.date} · {frontmatter.tags.join(", ")} ·{" "}
-          {post.fields.readingTime.text}
+          {`${frontmatter.date} · `}
+          {frontmatter.tags.map((v) => (
+            <Link key={v} to={`/tags/${v.toLowerCase()}`}>
+              {` ${v} `}
+            </Link>
+          ))}
+          {` · ${post.fields.readingTime.text}`}
         </HeaderDate>
 
-        {frontmatter.series && <SeriesCard series={frontmatter.series} />}
+        {frontmatter.series && (
+          <SeriesCard
+            series={frontmatter.series}
+            currentPath={frontmatter.path}
+          />
+        )}
 
         <MarkdownContent dangerouslySetInnerHTML={{ __html: post.html }} />
 
@@ -78,6 +88,11 @@ const HeaderDate = styled.h3`
   font-size: 1rem;
   font-weight: 400;
   color: #606060;
+  & > a {
+    :hover {
+      text-decoration: none;
+    }
+  }
 `;
 
 const MarkdownContent = styled.div`

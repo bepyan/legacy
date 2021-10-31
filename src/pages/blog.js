@@ -18,11 +18,7 @@ const BlogPage = ({ data }) => {
           </div>
         </Header>
         {data.allMarkdownRemark.edges
-          .filter(({ node }) => {
-            const rawDate = node.frontmatter.rawDate;
-            const date = new Date(rawDate);
-            return date < new Date();
-          })
+          .filter(({ node }) => new Date(node.frontmatter.rawDate) < new Date())
           .map(({ node }) => (
             <div key={node.id}>
               <Link
@@ -34,10 +30,13 @@ const BlogPage = ({ data }) => {
               >
                 <MarkerHeader>{node.frontmatter.title}</MarkerHeader>
               </Link>
-              <div>
-                <ArticleDate>{node.frontmatter.date}</ArticleDate>
-                <ReadingTime> · {node.fields.readingTime.text}</ReadingTime>
-              </div>
+
+              <SubHeader>
+                <h5>
+                  {node.frontmatter.date} · {node.fields.readingTime.text}
+                </h5>
+              </SubHeader>
+
               <PreviewText>{node.excerpt}</PreviewText>
             </div>
           ))}
@@ -116,20 +115,16 @@ const MarkerHeader = styled.h3`
   }
 `;
 
-const ArticleDate = styled.h5`
-  display: inline;
-  color: #606060;
-  font-weight: 400;
-`;
-
-const ReadingTime = styled.h5`
-  display: inline;
-  color: #606060;
-  font-weight: 400;
+const SubHeader = styled.div`
+  & > h5 {
+    display: inline;
+    color: #606060;
+    font-weight: 400;
+  }
 `;
 
 const PreviewText = styled.p`
   font-size: 0.9rem;
-  margin-bottom: 2.5rem;
-  opacity: 0.9;
+  color: #606060cc;
+  margin-bottom: 3rem;
 `;

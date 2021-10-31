@@ -10,7 +10,7 @@ import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 import styled from "@emotion/styled";
 
-import Navigation from "./Navigation";
+import { SiteHeader } from "./atoms";
 import "./layout.css";
 
 const Layout = ({ children }) => (
@@ -26,7 +26,7 @@ const Layout = ({ children }) => (
     `}
     render={(data) => (
       <>
-        <Navigation siteTitle={data.site.siteMetadata.title} />
+        <SiteHeader siteTitle={data.site.siteMetadata.title} />
         <Content>
           <main>{children}</main>
           <Footer>

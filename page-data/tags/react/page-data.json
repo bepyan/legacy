@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-tags-js",
     "path": "/tags/react/",
-    "result": {"data":{"allMarkdownRemark":{"totalCount":4,"edges":[{"node":{"frontmatter":{"title":"form 제대로 다루기","path":"/blog/react/form"}}},{"node":{"frontmatter":{"title":"div과 div안의 button onClick 이벤트 동시 다루기","path":"/blog/react/stop-propagation"}}},{"node":{"frontmatter":{"title":"( React Storybook ) 나만의 디자인 시스템 만들기 - 1","path":"/blog/react-storybook/1"}}},{"node":{"frontmatter":{"title":"( React Storybook ) CheckBox 만들기","path":"/blog/react-storybook/2"}}}]}},"pageContext":{"tag":"React"}},
+    "result": {"data":{"allMarkdownRemark":{"totalCount":5,"edges":[{"node":{"frontmatter":{"title":"Typescript 제너릭 함수 제대로 활용하기","path":"/blog/react/generic-arrow-function"}}},{"node":{"frontmatter":{"title":"form 제대로 다루기","path":"/blog/react/form"}}},{"node":{"frontmatter":{"title":"div과 div안의 button onClick 이벤트 동시 다루기","path":"/blog/react/stop-propagation"}}},{"node":{"frontmatter":{"title":"( React Storybook ) 나만의 디자인 시스템 만들기 - 1","path":"/blog/react-storybook/1"}}},{"node":{"frontmatter":{"title":"( React Storybook ) CheckBox 만들기","path":"/blog/react-storybook/2"}}}]}},"pageContext":{"tag":"React"}},
     "staticQueryHashes": ["210451802","3649515864","63159454"]}

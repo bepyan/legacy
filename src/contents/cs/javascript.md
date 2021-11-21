@@ -1,8 +1,8 @@
 ---
-title: "( 면접대비 ) Javascript"
+title: "Javascript"
 date: "2021-10-14"
 draft: false
-path: "/blog/cs/js"
+path: "/blog/cs/javascript"
 series: "면접 대비하기"
 tags: ["CS", "면접"]
 ---
@@ -36,11 +36,11 @@ tags: ["CS", "면접"]
 함수 표현식
 
 ```js
-work(); // 에러
+work() // 에러
 var work = function () {
-  return "working";
-};
-work();
+  return "working"
+}
+work()
 ```
 
 <br>
@@ -48,12 +48,12 @@ work();
 함수 선언식
 
 ```js
-work();
+work()
 // 호이스팅이 일어난다.
 function work() {
-  return "working";
+  return "working"
 }
-work();
+work()
 ```
 
 </p>

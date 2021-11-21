@@ -1,9 +1,9 @@
 ---
-title: "( 프로젝트 ) 걸어서 동네 속으로"
+title: "걸어서 동네 속으로"
 date: "2021-10-26"
 draft: false
-path: "/blog/retrospective/걸어서-동네-속으로"
-series: "프로젝트"
+path: "/blog/retrospective/walk-into-town"
+series: "프로젝트 회고"
 tags: ["회고", "면접"]
 ---
 

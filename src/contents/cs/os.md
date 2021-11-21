@@ -1,5 +1,5 @@
 ---
-title: "( 면접대비 ) Operating System 총정리"
+title: "Operating System 총정리"
 date: "2021-10-24"
 draft: false
 path: "/blog/cs/os"

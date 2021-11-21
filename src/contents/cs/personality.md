@@ -1,8 +1,8 @@
 ---
-title: "( 면접대비 ) 자아설찰, 경험"
+title: "자아설찰, 경험"
 date: "2021-10-20"
 draft: false
-path: "/blog/cs/5"
+path: "/blog/cs/personality"
 series: "면접 대비하기"
 tags: ["CS", "면접"]
 ---

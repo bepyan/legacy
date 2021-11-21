@@ -1,8 +1,8 @@
 ---
-title: "( 면접대비 ) 객체지향과 함수형 프로그래밍"
+title: "객체지향과 함수형 프로그래밍"
 date: "2021-10-12"
 draft: false
-path: "/blog/cs/1"
+path: "/blog/cs/paradigm"
 series: "면접 대비하기"
 tags: ["CS", "면접"]
 ---
@@ -162,7 +162,7 @@ tags: ["CS", "면접"]
 - 어떻게가 아닌 **무업을 달성하려는지**를 더 잘 표현할 수 있게 된다.
 - flatMap. map을 수행 후 새로운 배열로 평탄화 한다.
   ```js
-  [1, 2, 3].flatMap((v) => [v, v]); // [1, 1, 2, 2, 3, 3]
+  ;[1, 2, 3].flatMap(v => [v, v]) // [1, 1, 2, 2, 3, 3]
   ```
 
 <br>
@@ -174,14 +174,14 @@ tags: ["CS", "면접"]
 - 컨테이너에서 값을 빼내어 특정 함수를 사용하여 타입과 값을 변경하고 다시 컨테이너에 넣는 것.
 
   ```js
-  const arr = [1, 2, 3];
+  const arr = [1, 2, 3]
 
-  const doubledArr = [];
+  const doubledArr = []
   for (const v in arr) {
-    doubleArr.push(v * 2);
+    doubleArr.push(v * 2)
   }
 
-  console.log(doubledArr);
+  console.log(doubledArr)
   ```
 
 <br>

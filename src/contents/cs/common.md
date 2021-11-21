@@ -1,8 +1,8 @@
 ---
-title: "( 면접대비 ) 개발상식"
+title: "개발상식 문제집"
 date: "2021-10-14"
 draft: false
-path: "/blog/cs/2"
+path: "/blog/cs/common"
 series: "면접 대비하기"
 tags: ["CS", "면접"]
 ---

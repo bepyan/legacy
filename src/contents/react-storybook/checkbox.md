@@ -1,8 +1,8 @@
 ---
-title: "( React Storybook ) CheckBox 만들기"
+title: "CheckBox 만들기"
 date: "2021-10-17"
 draft: false
-path: "/blog/react-storybook/2"
+path: "/blog/react-storybook/checkbox"
 series: "React Storybook"
 tags: ["React", "Storybook"]
 ---
@@ -234,12 +234,12 @@ input:checked + .checkbox {
 css 선택자로 하기에는 너무 복잡하니 props으로 전달 받은 값을 활용하자.
 
 ```js
-<label css={[style, props.disabled && disabledStyle]}></label>;
+;<label css={[style, props.disabled && disabledStyle]}></label>
 
 const disabledStyle = css`
   pointer-events: none;
   opacity: 0.5;
-`;
+`
 ```
 
 <br>
@@ -256,9 +256,9 @@ const disabledStyle = css`
 
 ```ts
 interface CheckGroupProps {
-  labels: string[];
-  checkedList?: boolean[];
-  onCheck?: (index: number) => void;
+  labels: string[]
+  checkedList?: boolean[]
+  onCheck?: (index: number) => void
 }
 
 export const CheckGroup = ({
@@ -277,8 +277,8 @@ export const CheckGroup = ({
         />
       ))}
     </>
-  );
-};
+  )
+}
 ```
 
 <br>
@@ -295,35 +295,35 @@ export const CheckGroup = ({
 - label에 index로 매핑하는 `boolean[]`을 만든다.
 
 ```ts
-import { CheckGroup } from "@components/Input";
-import { useState } from "react";
+import { CheckGroup } from "@components/Input"
+import { useState } from "react"
 
 interface Props {
-  labels: string[];
-  defaultChecks?: boolean[];
+  labels: string[]
+  defaultChecks?: boolean[]
 }
 
 export const useChecks = ({ labels, defaultChecks }: Props) => {
   const [checkedList, setCheckedList] = useState(() =>
     labels.map((_, i) => !!defaultChecks && defaultChecks[i])
-  );
+  )
 
-  const isAllChecked = checkedList.every((x) => x);
+  const isAllChecked = checkedList.every(x => x)
 
   const onCheckAll = () => {
-    setCheckedList(labels.map(() => !isAllChecked));
-  };
+    setCheckedList(labels.map(() => !isAllChecked))
+  }
 
   const onCheck = (index: number) => {
-    setCheckedList((checks) => checks.map((v, i) => (i === index ? !v : v)));
-  };
+    setCheckedList(checks => checks.map((v, i) => (i === index ? !v : v)))
+  }
 
   const renderChecks = () => (
     <CheckGroup labels={labels} checkedList={checkedList} onCheck={onCheck} />
-  );
+  )
 
-  return { isAllChecked, checkedList, onCheckAll, renderChecks };
-};
+  return { isAllChecked, checkedList, onCheckAll, renderChecks }
+}
 ```
 
 <br>
@@ -332,13 +332,13 @@ export const useChecks = ({ labels, defaultChecks }: Props) => {
 ### 🗡 Story 만들기
 
 ```ts
-import { useChecks } from "@hooks";
-import { CheckBox, CheckGroup } from "./CheckBox";
+import { useChecks } from "@hooks"
+import { CheckBox, CheckGroup } from "./CheckBox"
 
 export default {
   title: "Input/Checkbox",
   component: CheckBox,
-};
+}
 
 export const Default = () => {
   return (
@@ -347,22 +347,22 @@ export const Default = () => {
       <CheckBox label="망고지연구반" defaultChecked />
       <CheckBox label="망고지연구반" disabled />
     </>
-  );
-};
+  )
+}
 
 export const WithHook = () => {
   const { isAllChecked, onCheckAll, renderChecks } = useChecks({
     labels: ["check1", "check2", "check3"],
     defaultChecks: [false, false, true],
-  });
+  })
 
   return (
     <div>
       <CheckBox label="전체선택" checked={isAllChecked} onClick={onCheckAll} />
       {renderChecks()}
     </div>
-  );
-};
+  )
+}
 ```
 
 <br>

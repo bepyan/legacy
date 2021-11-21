@@ -1,5 +1,5 @@
 ---
-title: "( 면접대비 ) 자료구조 문제집"
+title: "자료구조 문제집"
 date: "2021-10-25"
 draft: false
 path: "/blog/cs/data-structure"

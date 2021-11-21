@@ -1,5 +1,5 @@
 ---
-title: "( 면접대비 ) Network 문제집"
+title: "Network 문제집"
 date: "2021-10-24"
 draft: false
 path: "/blog/cs/network"

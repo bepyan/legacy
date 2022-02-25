@@ -22,7 +22,34 @@ const LandingPage = () => (
         <OuterContainer>
           <div>
             <NameHeader>{data.site.siteMetadata.title}</NameHeader>
-            <Description>{data.site.siteMetadata.subtitle}</Description>
+
+            <Content>
+              <p>현 블로그는 비활성화된 상태입니다.</p>
+              <a
+                href="https://bepyan.notion.site/Frontend-Developer-69fd245161734c1793e8df78dffe705c"
+                target="_blank"
+              >
+                resume
+              </a>
+              <a href="https://github.com/bepyan" target="_blank">
+                github
+              </a>
+              <a href="https://velog.io/@bepyan" target="_blank">
+                velog
+              </a>
+              <a
+                href="https://bepyan.notion.site/GET-START-de49308c21884e8a8037829b0c156931"
+                target="_blank"
+              >
+                notion
+              </a>
+              <a
+                href="https://bepyan.notion.site/2fcb69da90cd448fa074a9cda0ee0b29?v=ba83381b66d34c64974f82cb38825339"
+                target="_blank"
+              >
+                TIL
+              </a>
+            </Content>
           </div>
         </OuterContainer>
       )}
@@ -48,8 +75,12 @@ const NameHeader = styled.h1`
   margin-bottom: 0.5rem;
 `;
 
-const Description = styled.p`
-  padding: 0;
-  margin-bottom: 1rem;
-  font-size: 1.4rem;
+const Content = styled.div`
+  margin-top: 1rem;
+  a {
+    margin: 0 1rem;
+    :hover {
+      text-decoration: underline;
+    }
+  }
 `;

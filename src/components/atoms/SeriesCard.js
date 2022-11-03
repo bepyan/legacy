@@ -40,13 +40,13 @@ const SeriesCard = ({ series, currentPath }) => {
         <div>
           {list.map(({ path, title }, i) => (
             <li key={path} css={[currentPath === path && currentLink]}>
-              <Link to={path}>
+              <Link to={`/legacy/${path}`}>
                 {i + 1}. {title}
               </Link>
             </li>
           ))}
 
-          <Link to={`/series`}>다른 Series 보기</Link>
+          <Link to={`/legacy/series`}>다른 Series 보기</Link>
         </div>
       )}
     </Card>

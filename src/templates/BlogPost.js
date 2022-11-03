@@ -24,7 +24,7 @@ const BlogPost = ({ data }) => {
         <HeaderDate>
           {`${frontmatter.date} · `}
           {frontmatter.tags.map((v) => (
-            <Link key={v} to={`/tags/${v.toLowerCase()}`}>
+            <Link key={v} to={`/legacy/tags/${v.toLowerCase()}`}>
               {` ${v} `}
             </Link>
           ))}

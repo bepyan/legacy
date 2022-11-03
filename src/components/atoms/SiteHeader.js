@@ -7,8 +7,8 @@ const SiteHeader = ({ siteTitle }) => (
   <Wrapper>
     <div>
       <p>
-        <HomeLink to="/">{siteTitle}</HomeLink>
-        <NavLink to="/blog">Blog</NavLink>
+        <HomeLink to="/legacy">{siteTitle}</HomeLink>
+        <NavLink to="/legacy/blog">Blog</NavLink>
         <NavLink href="https://github.com/bepyan">GitHub</NavLink>
       </p>
     </div>

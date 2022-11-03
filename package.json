@@ -41,11 +41,11 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
-    "serve": "gatsby build && gatsby serve",
+    "serve": "gatsby build && gatsby serve --prefix-paths",
     "deploy": "gatsby build && gh-pages -d public",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   }

@@ -17,7 +17,7 @@ const Tags = ({ pageContext, data }) => {
           const { title, path } = node.frontmatter;
           return (
             <li key={path}>
-              <Link to={`/legacy/${path}`}>{title}</Link>
+              <Link to={`/${path}`}>{title}</Link>
             </li>
           );
         })}
@@ -26,7 +26,7 @@ const Tags = ({ pageContext, data }) => {
               This links to a page that does not yet exist.
               You'll come back to it!
             */}
-      <Link to="/legacy/tags">All tags</Link>
+      <Link to="/tags">All tags</Link>
     </Layout>
   );
 };

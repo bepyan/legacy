@@ -10,8 +10,8 @@ const SeriesPage = ({ data }) => (
       <Header>
         <h1>Series</h1>
         <div>
-          <Link to="/legacy/blog">Blog</Link>
-          <Link to="/legacy/tags">Tags</Link>
+          <Link to="/blog">Blog</Link>
+          <Link to="/tags">Tags</Link>
         </div>
       </Header>
 

@@ -10,14 +10,14 @@ const TagsPage = ({ data }) => (
       <Header>
         <h1>Tags</h1>
         <div>
-          <Link to="/legacy/blog">Blog</Link>
-          <Link to="/legacy/series">Series</Link>
+          <Link to="/blog">Blog</Link>
+          <Link to="/series">Series</Link>
         </div>
       </Header>
 
       {data.tagsGroup.group.map(({ tag, totalCount }) => (
         <div key={tag}>
-          <Link to={`/legacy/tags/${tag.toLowerCase()}`}>
+          <Link to={`/tags/${tag.toLowerCase()}`}>
             <MarkerHeader>
               {tag} ({totalCount})
             </MarkerHeader>

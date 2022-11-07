@@ -13,8 +13,8 @@ const BlogPage = ({ data }) => {
         <Header>
           <h1>Blog</h1>
           <div>
-            <Link to="/legacy/tags">Tags</Link>
-            <Link to="/legacy/series">Series</Link>
+            <Link to="/tags">Tags</Link>
+            <Link to="/series">Series</Link>
           </div>
         </Header>
         {data.allMarkdownRemark.edges
@@ -22,7 +22,7 @@ const BlogPage = ({ data }) => {
           .map(({ node }) => (
             <div key={node.id}>
               <Link
-                to={`/legacy/${node.frontmatter.path}`}
+                to={`/${node.frontmatter.path}`}
                 css={css`
                   text-decoration: none;
                   color: inherit;

@@ -22,7 +22,7 @@ const BlogPage = ({ data }) => {
           .map(({ node }) => (
             <div key={node.id}>
               <Link
-                to={`/${node.frontmatter.path}`}
+                to={`${node.frontmatter.path}`}
                 css={css`
                   text-decoration: none;
                   color: inherit;
